@@ -1,0 +1,125 @@
+[
+  {
+    "site_id": "pattadakal",
+    "site_name": "Pattadakal",
+    "alternate_names": [
+      "Pattadakalu",
+      "Raktapura",
+      "Kisuvolal"
+    ],
+    "district": "Bagalkot",
+    "state": "Karnataka",
+    "geo": {
+      "lat": 15.9483,
+      "lng": 75.8159
+    },
+    "unesco_status": "World Heritage Site (1987)",
+    "period": "7th–8th century CE",
+    "dynasty": "Chalukya",
+    "summary": "Pattadakal is a UNESCO World Heritage Site located on the banks of the Malaprabha River in Bagalkot district. It served as the ceremonial capital of the Chalukya dynasty where royal coronations took place. The site features a remarkable group of ten major temples built during the 7th and 8th centuries CE, showcasing an extraordinary blend of Dravidian (South Indian) and Nagara (North Indian) architectural styles. It represents the high point of Chalukyan temple architecture.",
+    "significance": "Pattadakal represents the pinnacle of eclectic art achieved by the Chalukya architects. It is the only site where both Dravidian and Nagara styles of temple architecture can be seen side by side, making it an invaluable laboratory of ancient Indian architecture.",
+    "visitor_tips": [
+      "Visit early morning to avoid crowds",
+      "Allow 2-3 hours to explore all temples",
+      "The Virupaksha Temple is still an active place of worship"
+    ],
+    "sources": [
+      "Archaeological Survey of India",
+      "UNESCO World Heritage Centre"
+    ],
+    "image_url": "/monument-images/site_pattadakal.jpg",
+    "language_adaptations": {
+      "kn": {
+        "site_name": "ಪಟ್ಟದಕಲ್ಲು",
+        "summary": "ಪಟ್ಟದಕಲ್ಲು ಬಾಗಲಕೋಟೆ ಜಿಲ್ಲೆಯ ಮಲಪ್ರಭಾ ನದಿಯ ದಂಡೆಯಲ್ಲಿರುವ ಯುನೆಸ್ಕೋ ವಿಶ್ವ ಪರಂಪರೆಯ ತಾಣವಾಗಿದೆ. ಇದು ಚಾಲುಕ್ಯ ರಾಜಮನೆತನದ ಪಟ್ಟಾಭಿಷೇಕದ ರಾಜಧಾನಿಯಾಗಿತ್ತು. 7 ಮತ್ತು 8 ನೇ ಶತಮಾನದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಹತ್ತು ಪ್ರಮುಖ ದೇವಾಲಯಗಳು ದ್ರಾವಿಡ ಮತ್ತು ನಾಗರ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿಗಳ ಸುಂದರ ಸಂಗಮವನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತವೆ.",
+        "significance": "ದ್ರಾವಿಡ ಮತ್ತು ನಾಗರ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿಗಳು ಪಕ್ಕಪಕ್ಕದಲ್ಲಿ ಕಂಡುಬರುವ ಏಕೈಕ ವಿಶ್ವ ಪರಂಪರೆಯ ತಾಣ."
+      },
+      "hi": {
+        "site_name": "पट्टदकल",
+        "summary": "पट्टदकल बागलकोट जिले में मलप्रभा नदी के तट पर स्थित एक यूनेस्को विश्व धरोहर स्थल है। यह चालुक्य राजवंश की राज्याभिषेक राजधानी थी। 7वीं और 8वीं शताब्दी में निर्मित 10 प्रमुख मंदिर द्रविड़ और नागर स्थापत्य शैलियों का एक अनूठा संगम प्रस्तुत करते हैं।",
+        "significance": "पट्टदकल चालुक्य वास्तुकला का चरमोत्कर्ष है जहाँ उत्तर और दक्षिण भारतीय शैलियाँ एक साथ विकसित हुईं।"
+      }
+    }
+  },
+  {
+    "site_id": "badami",
+    "site_name": "Badami",
+    "alternate_names": [
+      "Vatapi"
+    ],
+    "district": "Bagalkot",
+    "state": "Karnataka",
+    "geo": {
+      "lat": 15.9196,
+      "lng": 75.6774
+    },
+    "unesco_status": "On India's Tentative List for UNESCO World Heritage",
+    "period": "6th–8th century CE",
+    "dynasty": "Chalukya",
+    "summary": "Badami, formerly known as Vatapi, was the capital of the Early Chalukya dynasty from the 6th to 8th century CE. It is renowned for its rock-cut cave temples carved into the red sandstone cliffs surrounding the Agastya Lake. The four main cave temples — three Hindu and one Jain — are masterpieces of early Chalukyan art and architecture. The town is dramatically situated in a ravine between two rocky hills.",
+    "significance": "Badami is one of the earliest examples of rock-cut cave temple architecture in South India. The cave temples demonstrate the transition from rock-cut to structural temple building and contain some of the finest examples of early Chalukyan sculpture.",
+    "visitor_tips": [
+      "Start with Cave 1 and proceed in order",
+      "The climb to the caves involves steps carved in rock",
+      "Visit Agastya Lake at sunset for best views"
+    ],
+    "sources": [
+      "Archaeological Survey of India",
+      "Karnataka Tourism"
+    ],
+    "image_url": "/monument-images/site_badami.jpg",
+    "language_adaptations": {
+      "kn": {
+        "site_name": "ಬಾದಾಮಿ",
+        "summary": "ಹಿಂದೆ ವಾತಾಪಿ ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತಿದ್ದ ಬಾದಾಮಿ, 6 ರಿಂದ 8 ನೇ ಶತಮಾನದವರೆಗೆ ಆರಂಭಿಕ ಚಾಲುಕ್ಯ ರಾಜಮನೆತನದ ರಾಜಧಾನಿಯಾಗಿತ್ತು. ಅಗಸ್ತ್ಯ ಸರೋವರದ ಸುತ್ತಲಿನ ಕೆಂಪು ಮರಳುಗಲ್ಲಿನ ಬಂಡೆಗಳಲ್ಲಿ ಕೊರೆಯಲಾದ ಗುಹಾಂತರ ದೇವಾಲಯಗಳಿಗೆ ಇದು ಪ್ರಸಿದ್ಧವಾಗಿದೆ.",
+        "significance": "ದಕ್ಷಿಣ ಭಾರತದ ಅತ್ಯಂತ ಪ್ರಾಚೀನ ಬಂಡೆ-ಕೊರೆದ ಗುಹಾಂತರ ವಾಸ್ತುಶಿಲ್ಪದ ಭವ್ಯ ಉದಾಹರಣೆ."
+      },
+      "hi": {
+        "site_name": "बादामी",
+        "summary": "प्राचीन काल में वातापी के नाम से प्रसिद्ध बादामी, 6वीं से 8वीं शताब्दी तक चालुक्य राजवंश की राजधानी थी। यह अगस्त्य झील के चारों ओर लाल बलुआ पत्थर की चट्टानों में तराशे गए रॉक-कट गुफा मंदिरों के लिए विश्वविख्यात है।",
+        "significance": "दक्षिण भारत में रॉक-कट गुफा वास्तुकला का सबसे प्रारंभिक और भव्य उदाहरण।"
+      }
+    }
+  },
+  {
+    "site_id": "aihole",
+    "site_name": "Aihole",
+    "alternate_names": [
+      "Ayyavole",
+      "Aryapura"
+    ],
+    "district": "Bagalkot",
+    "state": "Karnataka",
+    "geo": {
+      "lat": 16.0157,
+      "lng": 75.8826
+    },
+    "unesco_status": "On India's Tentative List for UNESCO World Heritage",
+    "period": "5th–12th century CE",
+    "dynasty": "Chalukya",
+    "summary": "Aihole is often called the 'Cradle of Indian Temple Architecture.' Located on the banks of the Malaprabha River, it contains over 120 stone temples dating from the 5th to 12th century CE. The early Chalukya builders experimented with different architectural forms here before perfecting them at Pattadakal. The temples showcase a wide variety of architectural styles including apsidal, circular, rectangular, and stellate plans.",
+    "significance": "Aihole is considered the birthplace of Hindu temple architecture in South India. The experimental nature of the temples — where architects tried different plans, elevations, and decorative schemes — makes it an open-air museum of architectural evolution.",
+    "visitor_tips": [
+      "The Durga Temple is the most famous — don't miss it",
+      "Temples are spread across the town",
+      "Hire a local guide to find lesser-known temples"
+    ],
+    "sources": [
+      "Archaeological Survey of India",
+      "Karnataka Tourism"
+    ],
+    "image_url": "/monument-images/site_aihole.jpg",
+    "language_adaptations": {
+      "kn": {
+        "site_name": "ಐಹೊಳೆ",
+        "summary": "ಐಹೊಳೆಯನ್ನು 'ಭಾರತೀಯ ದೇವಾಲಯ ವಾಸ್ತುಶಿಲ್ಪದ ತೊಟ್ಟಿಲು' ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ಮಲಪ್ರಭಾ ನದಿಯ ದಂಡೆಯಲ್ಲಿರುವ ಇಲ್ಲಿ 5 ರಿಂದ 12 ನೇ ಶತಮಾನದವರೆಗಿನ 120 ಕ್ಕೂ ಹೆಚ್ಚು ಕಲ್ಲಿನ ದೇವಾಲಯಗಳಿವೆ. ಆರಂಭಿಕ ಚಾಲುಕ್ಯ ಶಿಲ್ಪಿಗಳು ವಿವಿಧ ವಾಸ್ತುಶಿಲ್ಪ ಪ್ರಯೋಗಗಳನ್ನು ಇಲ್ಲಿ ನಡೆಸಿದರು.",
+        "significance": "ಭಾರತೀಯ ದೇವಾಲಯಗಳ ಯೋಜನೆ, ಶೈಲಿ ಮತ್ತು ವಿಕಾಸದ ಮುಕ್ತ ವಸ್ತುಸಂಗ್ರಹಾಲಯ."
+      },
+      "hi": {
+        "site_name": "ऐहोल",
+        "summary": "ऐहोल को 'भारतीय मंदिर वास्तुकला का पालना' कहा जाता है। मलप्रभा नदी के तट पर स्थित इस ऐतिहासिक शहर में 5वीं से 12वीं शताब्दी के 120 से अधिक पत्थर के मंदिर हैं जहाँ चालुक्य शिल्पकारों ने विभिन्न शैलियों का प्रयोग किया।",
+        "significance": "भारतीय मंदिर वास्तुकला के विकास और विभिन्न शैलियों के उद्गम का खुला संग्रहालय।"
+      }
+    }
+  }
+]

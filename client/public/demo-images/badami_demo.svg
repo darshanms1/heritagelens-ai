@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyBadami" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A7C9B"/>
+      <stop offset="60%" stop-color="#F3C68F"/>
+      <stop offset="100%" stop-color="#DE8959"/>
+    </linearGradient>
+    <linearGradient id="cliffSandstone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B24424"/>
+      <stop offset="35%" stop-color="#8C2C15"/>
+      <stop offset="70%" stop-color="#671B0B"/>
+      <stop offset="100%" stop-color="#401007"/>
+    </linearGradient>
+    <linearGradient id="cliffLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D96843"/>
+      <stop offset="100%" stop-color="#A83C1D"/>
+    </linearGradient>
+    <linearGradient id="caveInterior" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#140604"/>
+      <stop offset="100%" stop-color="#240B07"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A6372"/>
+      <stop offset="50%" stop-color="#264551"/>
+      <stop offset="100%" stop-color="#182D36"/>
+    </linearGradient>
+    <filter id="rockTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#D96843" surfaceScale="2" result="light">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyBadami)"/>
+
+  <!-- Dramatic Red Sandstone Cliffs -->
+  <path d="M0,0 L350,0 Q320,80 340,160 Q380,240 330,320 L280,480 L0,500 Z" fill="url(#cliffSandstone)"/>
+  <path d="M450,0 L800,0 L800,500 L520,480 Q480,320 540,200 Q560,90 450,0 Z" fill="url(#cliffSandstone)"/>
+
+  <!-- Cliff Top Formations & Strata -->
+  <path d="M0,80 Q200,60 400,90 T800,70 L800,280 Q600,240 400,260 T0,270 Z" fill="url(#cliffLight)" opacity="0.85"/>
+  <path d="M0,140 Q250,110 500,135 T800,120 L800,220 L0,220 Z" fill="#8C2C15" opacity="0.6"/>
+
+  <!-- Cave 3 Opening (Excavated into solid rock) -->
+  <!-- Outer Arch/Plinth Cut -->
+  <rect x="140" y="240" width="520" height="230" fill="url(#cliffSandstone)" rx="8"/>
+  <!-- Deep Verandah (Dark Interior) -->
+  <rect x="160" y="260" width="480" height="190" fill="url(#caveInterior)" rx="4"/>
+
+  <!-- Massive Carved Rock Pillars (Cave 3 Colonnade) -->
+  <!-- Pillar 1 -->
+  <rect x="190" y="280" width="38" height="170" fill="url(#cliffLight)"/>
+  <polygon points="175,280 243,280 235,265 183,265" fill="#E88A68"/>
+  <rect x="185" y="430" width="48" height="20" fill="#671B0B"/>
+  
+  <!-- Pillar 2 -->
+  <rect x="290" y="280" width="38" height="170" fill="url(#cliffLight)"/>
+  <polygon points="275,280 343,280 335,265 283,265" fill="#E88A68"/>
+  <rect x="285" y="430" width="48" height="20" fill="#671B0B"/>
+
+  <!-- Pillar 3 -->
+  <rect x="390" y="280" width="38" height="170" fill="url(#cliffLight)"/>
+  <polygon points="375,280 443,280 435,265 383,265" fill="#E88A68"/>
+  <rect x="385" y="430" width="48" height="20" fill="#671B0B"/>
+
+  <!-- Pillar 4 -->
+  <rect x="490" y="280" width="38" height="170" fill="url(#cliffLight)"/>
+  <polygon points="475,280 543,280 535,265 483,265" fill="#E88A68"/>
+  <rect x="485" y="430" width="48" height="20" fill="#671B0B"/>
+
+  <!-- Pillar 5 -->
+  <rect x="580" y="280" width="38" height="170" fill="url(#cliffLight)"/>
+  <polygon points="565,280 633,280 625,265 573,265" fill="#E88A68"/>
+  <rect x="575" y="430" width="48" height="20" fill="#671B0B"/>
+
+  <!-- Bracket Figures (Madanikas) & Relief Silhouettes in Cave -->
+  <!-- Colossal Vishnu Relief on inner left wall -->
+  <path d="M165,300 Q180,310 178,360 Q185,410 170,440 L162,440 Z" fill="#9E4125" opacity="0.7"/>
+
+  <!-- Cliff Overhang above Cave -->
+  <path d="M120,240 Q400,210 680,240 L690,260 Q400,230 110,260 Z" fill="#E88A68"/>
+  <path d="M110,260 Q400,230 690,260 L680,270 Q400,245 120,270 Z" fill="#3D0F06"/>
+
+  <!-- Rock Steps Leading up to Cave 3 -->
+  <polygon points="120,470 680,470 710,510 90,510" fill="#8C2C15"/>
+  <polygon points="90,510 710,510 740,540 60,540" fill="#671B0B"/>
+
+  <!-- Agastya Lake Water in Foreground -->
+  <rect x="0" y="535" width="800" height="65" fill="url(#waterGrad)"/>
+  <!-- Water ripples and sandstone cliff reflection -->
+  <ellipse cx="400" cy="555" rx="300" ry="4" fill="#B24424" opacity="0.3"/>
+  <ellipse cx="380" cy="570" rx="200" ry="3" fill="#D96843" opacity="0.25"/>
+  <ellipse cx="420" cy="585" rx="250" ry="2" fill="#E88A68" opacity="0.2"/>
+
+  <!-- Banner Tag -->
+  <rect x="30" y="30" width="270" height="48" rx="8" fill="#1A1A1A" opacity="0.85"/>
+  <text x="45" y="52" fill="#E88A68" font-family="Georgia, serif" font-size="14" font-weight="bold">BADAMI</text>
+  <text x="45" y="68" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">Cave 3 (Vishnu Shrine) • 578 CE</text>
+</svg>

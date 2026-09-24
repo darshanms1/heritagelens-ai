@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment & Secrets (Never commit secrets)
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+server/.env*
+!server/.env.example
+client/.env*
+!client/.env.example
+
+# Build output
+dist/
+client/dist/
+build/
+
+# Scratch & Temporary
+scratch/
+tmp_chrome_profile/
+server/tmp_chrome_profile/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Uploads (runtime)
+server/uploads/*
+!server/uploads/.gitkeep

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyAihole" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5B86A6"/>
+      <stop offset="50%" stop-color="#C5DBE8"/>
+      <stop offset="100%" stop-color="#F2E6D0"/>
+    </linearGradient>
+    <linearGradient id="sandstoneAihole" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D69B56"/>
+      <stop offset="50%" stop-color="#B87733"/>
+      <stop offset="100%" stop-color="#804812"/>
+    </linearGradient>
+    <linearGradient id="sandstoneHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0C58A"/>
+      <stop offset="100%" stop-color="#C98F4B"/>
+    </linearGradient>
+    <linearGradient id="darkRecess" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1705"/>
+      <stop offset="100%" stop-color="#4A280D"/>
+    </linearGradient>
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#99A662"/>
+      <stop offset="40%" stop-color="#738241"/>
+      <stop offset="100%" stop-color="#4F5C26"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyAihole)"/>
+
+  <!-- Landscape / Garden Surroundings -->
+  <path d="M0,450 Q300,420 600,440 T800,430 L800,600 L0,600 Z" fill="url(#lawnGrad)"/>
+
+  <!-- Durga Temple High Plinth (Adhisthana) -->
+  <!-- Base molding -->
+  <path d="M120,490 L680,490 Q720,490 730,470 L730,440 L70,440 L70,470 Q80,490 120,490 Z" fill="url(#sandstoneAihole)"/>
+  <rect x="80" y="440" width="640" height="20" fill="url(#sandstoneHighlight)"/>
+  <rect x="90" y="460" width="620" height="15" fill="#804812"/>
+
+  <!-- Apsidal (Horseshoe / U-shape) Colonnade Corridor -->
+  <!-- Inner Sanctum Shadow / Hall -->
+  <rect x="180" y="320" width="440" height="120" fill="url(#darkRecess)"/>
+  <!-- Apsidal curved back (Right side) -->
+  <path d="M600,320 Q690,320 690,380 Q690,440 600,440 Z" fill="url(#darkRecess)"/>
+
+  <!-- Pillared Gallery (Outer Ambulatory) -->
+  <!-- Flat Roof Over Gallery -->
+  <polygon points="120,320 620,320 690,340 100,340" fill="url(#sandstoneHighlight)"/>
+  <rect x="100" y="335" width="590" height="15" fill="url(#sandstoneAihole)"/>
+
+  <!-- Colonnade Pillars with Carved Capitals -->
+  <!-- Pillar 1 -->
+  <rect x="130" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="122,345 156,345 150,335 128,335" fill="#F0C58A"/>
+  <!-- Pillar 2 -->
+  <rect x="190" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="182,345 216,345 210,335 188,335" fill="#F0C58A"/>
+  <!-- Pillar 3 -->
+  <rect x="250" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="242,345 276,345 270,335 248,335" fill="#F0C58A"/>
+  <!-- Pillar 4 -->
+  <rect x="310" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="302,345 336,345 330,335 308,335" fill="#F0C58A"/>
+  <!-- Pillar 5 -->
+  <rect x="370" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="362,345 396,345 390,335 368,335" fill="#F0C58A"/>
+  <!-- Pillar 6 -->
+  <rect x="430" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="422,345 456,345 450,335 428,335" fill="#F0C58A"/>
+  <!-- Pillar 7 -->
+  <rect x="490" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="482,345 516,345 510,335 488,335" fill="#F0C58A"/>
+  <!-- Pillar 8 -->
+  <rect x="550" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <polygon points="542,345 576,345 570,335 548,335" fill="#F0C58A"/>
+  <!-- Curved apse pillars (Right side spacing out) -->
+  <rect x="610" y="345" width="18" height="95" fill="url(#sandstoneHighlight)"/>
+  <rect x="655" y="350" width="16" height="90" fill="url(#sandstoneAihole)"/>
+
+  <!-- Inner Shrine (Garbhagriha) Superstructure - Early Rekha-Nagara Shikhara -->
+  <rect x="440" y="220" width="160" height="100" fill="url(#sandstoneAihole)"/>
+  <!-- Nagara tower curvature -->
+  <path d="M430,220 Q480,120 520,100 Q560,120 610,220 Z" fill="url(#sandstoneHighlight)"/>
+  <!-- Central Amalaka and Kalasha (partially ruined spire) -->
+  <path d="M495,100 Q520,80 545,100 Z" fill="url(#sandstoneAihole)"/>
+  <ellipse cx="520" cy="88" rx="22" ry="7" fill="#F0C58A"/>
+  <circle cx="520" cy="76" r="6" fill="#804812"/>
+
+  <!-- Decorative Chaitya Window Motifs on Tower -->
+  <circle cx="520" cy="140" r="14" fill="#5A2E07"/>
+  <circle cx="520" cy="180" r="16" fill="#5A2E07"/>
+
+  <!-- Entrance Porch (Mukhamandapa) on Left -->
+  <polygon points="70,440 140,440 120,380 60,380" fill="url(#sandstoneAihole)"/>
+  <!-- Steps to entrance -->
+  <polygon points="50,490 120,490 110,440 40,440" fill="#804812"/>
+
+  <!-- Unique U-Shape annotation tag overlay -->
+  <path d="M600,480 Q740,480 740,380 Q740,280 600,280" fill="none" stroke="#D69B56" stroke-width="3" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Banner Tag -->
+  <rect x="30" y="30" width="270" height="48" rx="8" fill="#1A1A1A" opacity="0.85"/>
+  <text x="45" y="52" fill="#F0C58A" font-family="Georgia, serif" font-size="14" font-weight="bold">AIHOLE</text>
+  <text x="45" y="68" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">Durga Temple (Apsidal Plan) • 7th c.</text>
+</svg>

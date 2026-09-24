@@ -1,0 +1,167 @@
+[
+  {
+    "demo_id": "pattadakal_demo",
+    "site_id": "pattadakal",
+    "monument_id": "virupaksha_temple_pattadakal",
+    "image_filename": "pattadakal_demo.svg",
+    "cached_identification": {
+      "site": "Pattadakal",
+      "monument": "Virupaksha Temple",
+      "confidence": 0.89,
+      "confidence_label": "Prepared Demo Grounding",
+      "visual_clues": ["Dravidian-style shikhara (temple tower)", "Sandstone construction", "Nandi pavilion visible", "Chalukyan sculptural style"]
+    },
+    "cached_explanations": {
+      "en": {
+        "quick": "The Virupaksha Temple at Pattadakal is one of the finest examples of Dravidian Chalukyan architecture, built around 740 CE by Queen Lokamahadevi.",
+        "tourist": "This magnificent temple was built by Queen Lokamahadevi to celebrate her husband King Vikramaditya II's victory over the Pallavas. It's the largest and most sophisticated temple in Pattadakal. The temple is covered with detailed carvings showing stories from ancient Indian epics like the Ramayana and Mahabharata. Right in front is a large pavilion for Nandi, Lord Shiva's sacred bull.",
+        "student": "The Virupaksha Temple represents the mature phase of Badami Chalukyan architecture. It features a complete Dravidian vimana with a square garbhagriha, circumambulatory path, and a pillared mandapa. The structural complexity and sculptural refinement show significant Pallava influence, likely because architects were brought from Kanchipuram after the military victory.",
+        "detailed": "Constructed circa 740 CE, the Virupaksha Temple (originally Lokeshwara) was patronized by Queen Lokamahadevi. Architecturally, it exemplifies the southern Dravida style with its stepped, pyramidal superstructure (vimana) capped by a domical sikhara. The walls are articulated with projections and recesses containing elaborately carved niches. The narrative friezes on the pillars are among the most detailed in early medieval Indian art, providing vital insights into contemporary dress, society, and religious practices."
+      },
+      "kn": { 
+        "quick": "ಪಟ್ಟದಕಲ್ಲಿನ ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯವು ದ್ರಾವಿಡ ಚಾಲುಕ್ಯ ವಾಸ್ತುಶಿಲ್ಪದ ಅತ್ಯುತ್ತಮ ಉದಾಹರಣೆಯಾಗಿದ್ದು, ಸುಮಾರು 740 ಸಾಮಾನ್ಯ ಶಕದಲ್ಲಿ ರಾಣಿ ಲೋಕಮಹಾದೇವಿಯಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟಿದೆ.", 
+        "tourist": "ಈ ಭವ್ಯವಾದ ದೇವಾಲಯವನ್ನು ಪಲ್ಲವರ ಮೇಲಿನ ವಿಜಯದ ಸ್ಮರಣಾರ್ಥವಾಗಿ ವಿಕ್ರಮಾದಿತ್ಯ II ನ ರಾಣಿ ಲೋಕಮಹಾದೇವಿ ನಿರ್ಮಿಸಿದಳು. ಇದು ಪಟ್ಟದಕಲ್ಲಿನ ಅತಿದೊಡ್ಡ ದೇವಾಲಯ. ಇದರ ಗೋಡೆಗಳ ಮೇಲೆ ರಾಮಾಯಣ ಮತ್ತು ಮಹಾಭಾರತದ ಕಥೆಗಳನ್ನು ಕೆತ್ತಲಾಗಿದೆ. ಗರ್ಭಗುಡಿಯ ಎದುರು ಬೃಹತ್ ನಂದಿ ಮಂಟಪವಿದೆ.", 
+        "student": "ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯವು ಬಾದಾಮಿ ಚಾಲುಕ್ಯರ ವಾಸ್ತುಶಿಲ್ಪದ ಪ್ರಬುದ್ಧ ಹಂತವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ. ಇದು ಚೌಕಾಕಾರದ ಗರ್ಭಗುಡಿ ಮತ್ತು ಪ್ರದಕ್ಷಿಣಾ ಪಥವನ್ನು ಹೊಂದಿರುವ ಸಂಪೂರ್ಣ ದ್ರಾವಿಡ ವಿಮಾನವನ್ನು ಹೊಂದಿದೆ. ಪಲ್ಲವ ವಾಸ್ತುಶಿಲ್ಪದ ಪ್ರಭಾವ ಇಲ್ಲಿ ಸ್ಪಷ್ಟವಾಗಿದೆ.", 
+        "detailed": "ಸುಮಾರು 740 ಸಾಮಾನ್ಯ ಶಕದಲ್ಲಿ ನಿರ್ಮಾಣವಾದ ಈ ದೇವಾಲಯವು ದ್ರಾವಿಡ ಶೈಲಿಯ ವಾಸ್ತುಶಿಲ್ಪದ ಅತ್ಯುನ್ನತ ಮಾದರಿಯಾಗಿದೆ. ಕಂಬಗಳ ಮೇಲಿನ ಕಥಾನಕಗಳ ಕೆತ್ತನೆಗಳು ಪ್ರಾಚೀನ ಭಾರತೀಯ ಕಲೆಯ ಅದ್ಭುತ ಕೃತಿಗಳಾಗಿವೆ. ನಂದಿ ಮಂಟಪ ಮತ್ತು ಪ್ರದಕ್ಷಿಣಾ ಪಥಗಳು ಅತ್ಯಂತ ವೈಭವೋಪೇತವಾಗಿವೆ." 
+      },
+      "hi": { 
+        "quick": "पट्टदकल का विरुपाक्ष मंदिर द्रविड़ चालुक्य वास्तुकला का एक बेहतरीन उदाहरण है, जिसे 740 ईस्वी के आसपास रानी लोक महादेवी ने बनवाया था।", 
+        "tourist": "इस भव्य मंदिर का निर्माण पल्लवों पर राजा विक्रमादित्य द्वितीय की जीत का जश्न मनाने के लिए उनकी रानी लोक महादेवी ने करवाया था। यह पट्टदकल का सबसे बड़ा मंदिर है और इसकी दीवारों पर रामायण और महाभारत की कथाएं उकेरी गई हैं। मंदिर के सामने विशाल नंदी मंडप है।", 
+        "student": "विरुपाक्ष मंदिर बादामी चालुक्य वास्तुकला के परिपक्व चरण को दर्शाता है। इसमें एक वर्गाकार गर्भगृह, प्रदक्षिणा पथ और एक स्तंभयुक्त मंडप के साथ एक पूर्ण द्रविड़ विमान है। कांचीपुरम के वास्तुशिल्प का गहरा प्रभाव यहां दिखता है।", 
+        "detailed": "लगभग 740 ईस्वी में निर्मित, विरुपाक्ष मंदिर अपनी सीढ़ीदार, पिरामिड संरचना (विमान) के साथ दक्षिणी द्रविड़ शैली का उदाहरण है। खंभों पर कथात्मक नक्काशी मध्ययुगीन भारतीय कला में सबसे विस्तृत है, जो उस समय के सामाजिक जीवन को दर्शाती है।" 
+      }
+    },
+    "cached_followups": {
+      "what_to_notice": { 
+        "en": "Look for the detailed narrative carvings on the pillars inside the hall depicting scenes from the Ramayana and Mahabharata. Also observe the monolithic Nandi bull pavilion aligned directly with the sanctum.", 
+        "kn": "ಮಂಟಪದ ಒಳಗಿನ ಕಂಬಗಳ ಮೇಲಿನ ರಾಮಾಯಣ ಮತ್ತು ಮಹಾಭಾರತದ ಮಹಾಕಾವ್ಯಗಳ ಕೆತ್ತನೆಗಳನ್ನು ಗಮನಿಸಿ. ಗರ್ಭಗುಡಿಗೆದುರಾಗಿರುವ ಏಕಶಿಲಾ ನಂದಿ ಮಂಟಪವನ್ನು ತಪ್ಪದೇ ನೋಡಿ.", 
+        "hi": "मंडप के खंभों पर रामायण और महाभारत के दृश्यों को दर्शाती विस्तृत नक्काशी देखें। गर्भगृह के ठीक सामने स्थित विशाल नंदी मंडप को अवश्य देखें।" 
+      },
+      "who_built": { 
+        "en": "It was commissioned by Queen Lokamahadevi around 740 CE to celebrate King Vikramaditya II's decisive military victory over the Pallavas of Kanchipuram.", 
+        "kn": "ಇದನ್ನು ಸುಮಾರು 740 ಸಾಮಾನ್ಯ ಶಕದಲ್ಲಿ ರಾಣಿ ಲೋಕಮಹಾದೇವಿಯು ಪಲ್ಲವರ ಮೇಲಿನ ವಿಕ್ರಮಾದಿತ್ಯ II ರ ವಿಜಯದ ನೆನಪಿನಲ್ಲಿ ನಿರ್ಮಿಸಿದಳು.", 
+        "hi": "इसे लगभग 740 ईस्वी में रानी लोक महादेवी ने कांचीपुरम के पल्लवों पर राजा विक्रमादित्य द्वितीय की विजय के उपलक्ष्य में बनवाया था।" 
+      },
+      "architecture_special": {
+        "en": "It is the pinnacle of Chalukyan Dravidian architecture, featuring an ornate vimana with square garbhagriha, detailed bracket figures, and seamless narrative relief work influenced by Pallava artisans.",
+        "kn": "ಇದು ಚಾಲುಕ್ಯ ದ್ರಾವಿಡ ವಾಸ್ತುಶಿಲ್ಪದ ಉತ್ತುಂಗವಾಗಿದ್ದು, ಚೌಕಾಕಾರದ ಗರ್ಭಗುಡಿ, ಅಲಂಕೃತ ವಿಮಾನ ಮತ್ತು ಪಲ್ಲವ ಶಿಲ್ಪಿಗಳ ಪ್ರಭಾವದಿಂದ ಕೂಡಿದ ನಯವಾದ ಕೆತ್ತನೆಗಳನ್ನು ಹೊಂದಿದೆ.",
+        "hi": "यह चालुक्य द्रविड़ वास्तुकला का शिखर है, जिसमें वर्गाकार गर्भगृह, अलंकृत विमान और पल्लव कलाकारों से प्रभावित बारीक नक्काशी शामिल है।"
+      },
+      "explain_to_child": { 
+        "en": "Imagine a magnificent stone castle built not for humans, but as a home for God! Nearly 1,300 years ago, a loving queen hired master sculptors to carve storybook pictures into stone to celebrate a great victory.", 
+        "kn": "ಸುಮಾರು 1300 ವರ್ಷಗಳ ಹಿಂದೆ ಒಬ್ಬ ಪ್ರೀತಿಯ ರಾಣಿ ದೊಡ್ಡ ಯುದ್ಧದ ಗೆಲುವಿನ ಸಂಭ್ರಮದಲ್ಲಿ ದೇವರಿಗಾಗಿ ಈ ಸುಂದರ ಕಲ್ಲಿನ ಅರಮನೆಯನ್ನು ಕಟ್ಟಿಸಿದಳು ಎಂದು ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ! ಇದರ ಕಲ್ಲಿನ ಮೇಲೆ ಕಥೆಗಳನ್ನೇ ಕೆತ್ತಲಾಗಿದೆ.", 
+        "hi": "कल्पना करें कि लगभग 1300 साल पहले एक रानी ने एक बड़ी जीत का जश्न मनाने के लिए भगवान के घर के रूप में यह भव्य पत्थर का महल बनवाया था, जिस पर कहानियाँ उकेरी गई हैं।" 
+      }
+    }
+  },
+  {
+    "demo_id": "badami_demo",
+    "site_id": "badami",
+    "monument_id": "cave_3_badami",
+    "image_filename": "badami_demo.svg",
+    "cached_identification": {
+      "site": "Badami",
+      "monument": "Cave 3",
+      "confidence": 0.92,
+      "confidence_label": "Prepared Demo Grounding",
+      "visual_clues": ["Rock-cut cave architecture", "Large sculpted pillars", "Red sandstone cliff context"]
+    },
+    "cached_explanations": {
+      "en": {
+        "quick": "Cave 3 at Badami is the largest and most ornate of the rock-cut shrines, dedicated to Lord Vishnu and dated to 578 CE.",
+        "tourist": "Carved directly into the dramatic red sandstone cliffs, this magnificent cave is dedicated to Lord Vishnu. It's the largest of the four main Badami caves. As you enter, you'll be amazed by the giant, incredibly detailed statues of Vishnu in various forms, including Trivikrama (the giant who stepped across the universe) and Varaha (the boar incarnation).",
+        "student": "Excavated in 578 CE by King Mangalesha, Cave 3 is a masterpiece of early Chalukyan rock-cut architecture. It features an exceptionally deep verandah supported by massive, ornately carved pillars with elaborate bracket figures (madanikas). The cave is crucial for historians as its inscription provides a definitive chronological anchor for early Chalukyan art.",
+        "detailed": "Cave 3 represents the apogee of Badami's rock-cut tradition. The architectural plan includes a rectangular pillared verandah, a pillared hall (maha-mandapa), and a square monolithic shrine. The sculptural program is dominated by colossal, high-relief panels of Vaishnava iconography. Traces of ancient murals on the ceiling indicate that these rock-cut temples were originally covered in vibrant frescoes, similar to Ajanta."
+      },
+      "kn": {
+        "quick": "ಬಾದಾಮಿಯ ಗುಹೆ 3 ಬಂಡೆಯನ್ನು ಕೊರೆದು ಮಾಡಿದ ದೇವಾಲಯಗಳಲ್ಲಿ ಅತಿದೊಡ್ಡದಾಗಿದೆ. ಇದು ವಿಷ್ಣುವಿಗೆ ಸಮರ್ಪಿತವಾಗಿದ್ದು, ಕ್ರಿ.ಶ 578 ಕ್ಕೆ ಸೇರಿದೆ.",
+        "tourist": "ಕೆಂಪು ಮರಳುಗಲ್ಲಿನ ಬಂಡೆಯನ್ನು ಕೊರೆದು ನಿರ್ಮಿಸಲಾದ ಈ ಗುಹೆ ವಿಷ್ಣುವಿಗೆ ಸಮರ್ಪಿತವಾಗಿದೆ. ಇದು ಬಾದಾಮಿಯ ನಾಲ್ಕು ಮುಖ್ಯ ಗುಹೆಗಳಲ್ಲಿ ಅತಿದೊಡ್ಡದು. ತ್ರಿವಿಕ್ರಮ ಮತ್ತು ವರಾಹದಂತಹ ಬೃಹತ್ ವಿಗ್ರಹಗಳನ್ನು ಇಲ್ಲಿ ನೋಡಬಹುದು. ಅಗಸ್ತ್ಯ ಸರೋವರದ ಸನಿಹದಲ್ಲಿರುವ ಈ ಗುಹೆ ಅದ್ಭುತವಾಗಿದೆ.",
+        "student": "ಕ್ರಿ.ಶ 578 ರಲ್ಲಿ ಮಂಗಳೇಶ ರಾಜನಿಂದ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ ಈ ಗುಹೆ ಆರಂಭಿಕ ಚಾಲುಕ್ಯರ ಬಂಡೆ-ಕೊರೆದ ವಾಸ್ತುಶಿಲ್ಪದ ಅತ್ಯುತ್ತಮ ಉದಾಹರಣೆಯಾಗಿದೆ. ಕಂಬಗಳ ಮೇಲಿನ ಮದನಿಕಾ ಶಿಲ್ಪಗಳು ಮತ್ತು ತ್ರಿವಿಕ್ರಮ ಉಬ್ಬುಶಿಲ್ಪಗಳು ಐತಿಹಾಸಿಕವಾಗಿ ಅತ್ಯಂತ ಮಹತ್ವದ್ದಾಗಿವೆ.",
+        "detailed": "ಗುಹೆ 3 ಬಾದಾಮಿಯ ಬಂಡೆ-ಕೊರೆದ ಸಂಪ್ರದಾಯದ ಉತ್ತುಂಗವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ. ಇಲ್ಲಿನ ಕಂಬಗಳ ಮೇಲಿನ ಕೆತ್ತನೆಗಳು ಮತ್ತು ಭಾರಿ ಗಾತ್ರದ ವಿಷ್ಣುವಿನ ಅವತಾರಗಳು ಗಮನಾರ್ಹವಾಗಿವೆ. ಛಾವಣಿಯ ಮೇಲಿನ ಪ್ರಾಚೀನ ವರ್ಣಚಿತ್ರಗಳ ಕುರುಹುಗಳು ಇಂದಿಗೂ ಗೋಚರಿಸುತ್ತವೆ."
+      },
+      "hi": {
+        "quick": "बादामी में गुफा 3 चट्टान को काटकर बनाए गए मंदिरों में सबसे बड़ी है। यह भगवान विष्णु को समर्पित है और 578 ईस्वी की है।",
+        "tourist": "लाल बलुआ पत्थर की चट्टान को काटकर बनाई गई यह शानदार गुफा भगवान विष्णु को समर्पित है। यह बादामी की चार मुख्य गुफाओं में सबसे बड़ी है। त्रिविक्रम और वराह के रूप में विष्णु की विशाल मूर्तियां बेहद प्रभावशाली हैं।",
+        "student": "578 ईस्वी में राजा मंगलेश द्वारा बनवाई गई यह गुफा प्रारंभिक चालुक्य चट्टान को काटकर बनाई गई वास्तुकला की एक उत्कृष्ट कृति है। इसके स्तंभों पर बनी मदनिका आकृतियां और त्रिविक्रम का विशाल रूप कलात्मक दृष्टि से अद्वितीय है।",
+        "detailed": "गुफा 3 बादामी की चट्टान को काटकर बनाने की परंपरा के शिखर को दर्शाती है। इसके खंभों और दीवारों पर बड़े आकार की नक्काशी इसकी विशेषता है। छत पर प्राचीन भित्तिचित्रों के अवशेष बताते हैं कि यह कभी अजंता की तरह रंगीन थी।"
+      }
+    },
+    "cached_followups": {
+      "what_to_notice": { 
+        "en": "Notice the colossal reliefs of Vishnu as Trivikrama and Varaha. Look up at the ceiling to see remnants of ancient mural paintings and intricate floral brackets on the pillars.", 
+        "kn": "ವಿಷ್ಣುವಿನ ತ್ರಿವಿಕ್ರಮ ಮತ್ತು ವರಾಹ ಅವತಾರಗಳ ಬೃಹತ್ ಉಬ್ಬುಶಿಲ್ಪಗಳನ್ನು ಗಮನಿಸಿ. ಛಾವಣಿಯ ಮೇಲಿರುವ ಪುರಾತನ ವರ್ಣಚಿತ್ರಗಳ ಅವಶೇಷಗಳು ಮತ್ತು ಕಂಬಗಳ ಬ್ರಾಕೆಟ್ ಶಿಲ್ಪಗಳನ್ನು ವೀಕ್ಷಿಸಿ.", 
+        "hi": "त्रिविक्रम और वराह के रूप में भगवान विष्णु की विशाल नक्काशी देखें। छत पर प्राचीन भित्ति चित्रों के अवशेष और खंभों पर बारीक कोष्ठक आकृतियों को ध्यान से देखें।" 
+      },
+      "who_built": { 
+        "en": "It was excavated in 578 CE by the Early Chalukya King Mangalesha, during the reign of his elder brother Kirtivarman I, as authenticated by an original stone inscription.", 
+        "kn": "ಇದನ್ನು ಕ್ರಿ.ಶ 578 ರಲ್ಲಿ ಕೀರ್ತಿವರ್ಮನ್ I ರ ಆಳ್ವಿಕೆಯ ಕಾಲದಲ್ಲಿ ಅವರ ಸಹೋದರ ಚಾಲುಕ್ಯ ರಾಜ ಮಂಗಳೇಶನು ನಿರ್ಮಿಸಿದನು. ಇದಕ್ಕೆ ಶಾಸನದ ಆಧಾರವಿದೆ.", 
+        "hi": "इसे 578 ईस्वी में चालुक्य राजा मंगलेश ने अपने बड़े भाई कीर्तिवर्मन प्रथम के शासनकाल में बनवाया था, जिसका प्रमाण यहाँ मौजूद शिलालेख देता है।" 
+      },
+      "architecture_special": {
+        "en": "It is a monolithic rock-cut cave carved entirely into solid red sandstone cliff, featuring a deep verandah, bracket figures (madanikas), and massive sculpted iconographic panels.",
+        "kn": "ಇದು ನೈಸರ್ಗಿಕ ಕೆಂಪು ಮರಳುಗಲ್ಲಿನ ಬಂಡೆಯನ್ನೇ ಕೊರೆದು ರಚಿಸಲಾದ ಏಕಶಿಲಾ ಗುಹಾ ದೇವಾಲಯವಾಗಿದ್ದು, ಆಳವಾದ ಮುಖಮಂಟಪ ಮತ್ತು ಬೃಹತ್ ಶಿಲ್ಪಗಳನ್ನು ಹೊಂದಿದೆ.",
+        "hi": "यह लाल बलुआ पत्थर की चट्टान को पूरी तरह तराशकर बनाई गई एकाश्म गुफा है, जिसमें गहरा बरामदा और स्तंभों पर बारीक आकृतियां हैं।"
+      },
+      "explain_to_child": { 
+        "en": "Imagine carving a huge, grand palace right into the side of a red mountain! Over 1,400 years ago, ancient stone-carvers chipped away rock for years to create giant statues of heroes inside the mountain.", 
+        "kn": "ಕೆಂಪು ಪರ್ವತದ ಒಳಗೇ ಒಂದು ಭವ್ಯವಾದ ಮನೆಯನ್ನು ಕಲ್ಲಿನಿಂದ ಕೆತ್ತಿರುವುದನ್ನು ಊಹಿಸಿಕೊಳ್ಳಿ! 1400 ವರ್ಷಗಳ ಹಿಂದೆ ಶಿಲ್ಪಿಗಳು ಬಂಡೆಯನ್ನು ಕೊರೆದು ಈ ದೊಡ್ಡ ದೇವರುಗಳ ವಿಗ್ರಹಗಳನ್ನು ಮಾಡಿದ್ದಾರೆ.", 
+        "hi": "कल्पना कीजिए कि एक लाल पहाड़ के अंदर पत्थर तराशकर एक भव्य महल बना दिया गया हो! 1400 साल पहले कारीगरों ने पहाड़ को खोदकर यह मंदिर बनाया था।" 
+      }
+    }
+  },
+  {
+    "demo_id": "aihole_demo",
+    "site_id": "aihole",
+    "monument_id": "durga_temple_aihole",
+    "image_filename": "aihole_demo.svg",
+    "cached_identification": {
+      "site": "Aihole",
+      "monument": "Durga Temple",
+      "confidence": 0.95,
+      "confidence_label": "Prepared Demo Grounding",
+      "visual_clues": ["Apsidal (U-shaped) plan", "Elevated plinth", "Pillared corridor around the structure"]
+    },
+    "cached_explanations": {
+      "en": {
+        "quick": "The Durga Temple at Aihole is famous for its unique apsidal (U-shaped) architecture and pillared corridor, dating back to the 7th-8th century.",
+        "tourist": "Despite its name, this temple isn't actually dedicated to the Goddess Durga. The name 'Durga' comes from 'Durg', meaning fort, because it was located near a fortification wall. Its most striking feature is its U-shape (apsidal plan), which is very rare in Indian temples. You can walk all the way around the main shrine through a beautifully carved pillared corridor.",
+        "student": "The Durga Temple is a prime example of the experimental nature of early Chalukyan architecture. Its apsidal plan is believed to be inspired by ancient Buddhist chaitya halls. The temple features a high plinth, an adhisthana with elaborate moldings, and a mukhamandapa leading to the circumambulatory passage. The shikhara (tower), though partially ruined, shows early Nagara style elements.",
+        "detailed": "Constructed between the late 7th and early 8th century, the Durga Temple's apsidal layout (gajaprastha or elephant-back shape) makes it an architectural anomaly in the region. The temple integrates a Rekha-Nagara style shikhara over an apsidal garbhagriha, surrounded by a covered circumambulatory path (pradakshinapatha) formed by an outer colonnade. The sculptural program on the pillars and niches includes exquisite depictions of Shiva with Nandi, Narasimha, and Vishnu riding Garuda."
+      },
+      "kn": {
+        "quick": "ಐಹೊಳೆಯ ದುರ್ಗಾ ದೇವಾಲಯವು ವಿಶಿಷ್ಟವಾದ ಅರ್ಧಚಂದ್ರಾಕಾರದ (U-ಆಕಾರ) ವಾಸ್ತುಶಿಲ್ಪಕ್ಕೆ ಹೆಸರುವಾಸಿಯಾಗಿದೆ. ಇದು 7-8ನೇ ಶತಮಾನಕ್ಕೆ ಸೇರಿದೆ.",
+        "tourist": "ಇದರ ಹೆಸರಿನ ಹೊರತಾಗಿಯೂ, ಈ ದೇವಾಲಯವು ದುರ್ಗಾ ದೇವಿಗೆ ಸಮರ್ಪಿತವಾಗಿಲ್ಲ. 'ದುರ್ಗ' ಎಂದರೆ ಕೋಟೆ; ಕೋಟೆಯ ಪಕ್ಕದಲ್ಲಿ ಇದ್ದುದರಿಂದ ಈ ಹೆಸರು ಬಂದಿದೆ. ಇದರ ವಿಶಿಷ್ಟವಾದ 'U' ಆಕಾರ (ಗಜಪೃಷ್ಠ ಆಕಾರ) ಭಾರತೀಯ ದೇವಾಲಯಗಳಲ್ಲಿ ಬಹಳ ಅಪರೂಪ. ಹೊರಗಿನ ಕಂಬಗಳ ಕಾರಿಡಾರ್‌ನಲ್ಲಿ ಪ್ರದಕ್ಷಿಣೆ ಹಾಕಬಹುದು.",
+        "student": "ದುರ್ಗಾ ದೇವಾಲಯವು ಆರಂಭಿಕ ಚಾಲುಕ್ಯರ ವಾಸ್ತುಶಿಲ್ಪದ ಪ್ರಾಯೋಗಿಕ ಸ್ವರೂಪಕ್ಕೆ ಅತ್ಯುತ್ತಮ ಉದಾಹರಣೆಯಾಗಿದೆ. ಇದರ ಗಜಪೃಷ್ಠ ಆಕಾರವು ಬೌದ್ಧ ಚೈತ್ಯಾಲಯಗಳಿಂದ ಪ್ರೇರಿತವಾಗಿದೆ ಎಂದು ವಿದ್ವಾಂಸರು ಗುರುತಿಸುತ್ತಾರೆ. ಇದು ಎತ್ತರದ ಜಗುಲಿ ಮತ್ತು ರೇಖಾ-ನಾಗರ ಶೈಲಿಯ ಶಿಖರವನ್ನು ಹೊಂದಿದೆ.",
+        "detailed": "7ನೇ ಶತಮಾನದ ಕೊನೆಯಲ್ಲಿ ಮತ್ತು 8ನೇ ಶತಮಾನದ ಆರಂಭದಲ್ಲಿ ನಿರ್ಮಿಸಲಾದ ಈ ದೇವಾಲಯವು ವಾಸ್ತುಶಿಲ್ಪದ ಒಂದು ಅದ್ಭುತ ವಿಸ್ಮಯವಾಗಿದೆ. ಹೊರಭಾಗದ ಸುತ್ತಲೂ ಸ್ತಂಭಾವಳಿಗಳಿಂದ ಕೂಡಿದ ಪ್ರದಕ್ಷಿಣಾ ಪಥವಿದೆ. ಕಂಬಗಳ ಮೇಲಿನ ಶಿವ-ನಂದಿ, ನರಸಿಂಹ ಮತ್ತು ಗರುಡಾರೂಢ ವಿಷ್ಣುವಿನ ಕೆತ್ತನೆಗಳು ಅತ್ಯಂತ ಮೋಹಕವಾಗಿವೆ."
+      },
+      "hi": {
+        "quick": "ऐहोल का दुर्गा मंदिर अपनी अनूठी यू-आकार (अर्धवृत्ताकार) की वास्तुकला के लिए प्रसिद्ध है, जो 7वीं-8वीं शताब्दी का है।",
+        "tourist": "अपने नाम के बावजूद, यह मंदिर वास्तव में देवी दुर्गा को समर्पित नहीं है। 'दुर्गा' नाम 'दुर्ग' (किले) से आया है, क्योंकि यह एक सुरक्षात्मक दीवार के पास स्थित था। इसका यू-आकार भारतीय मंदिरों में अत्यंत दुर्लभ है। इसके चारों ओर बने स्तंभयुक्त गलियारे में परिक्रमा की जा सकती है।",
+        "student": "दुर्गा मंदिर प्रारंभिक चालुक्य वास्तुकला की प्रयोगात्मक प्रकृति का प्रमुख उदाहरण है। इसकी योजना प्राचीन बौद्ध चैत्य हॉल (गजपृष्ठाकार) से प्रेरित मानी जाती है। इसमें एक ऊंचा चबूतरा (अधिष्ठान), खुला बरामदा और आरंभिक नागर शैली का शिखर शामिल है।",
+        "detailed": "7वीं के अंत और 8वीं शताब्दी की शुरुआत के बीच निर्मित, दुर्गा मंदिर का लेआउट इसे भारतीय वास्तुकला में अद्वितीय बनाता है। इसके बाहरी स्तंभों पर शिव-नंदी, नृसिंह और विष्णु की उत्कृष्ट प्रतिमाएं उकेरी गई हैं।"
+      }
+    },
+    "cached_followups": {
+      "what_to_notice": { 
+        "en": "Walk around the outer apsidal colonnade and observe how the building curves smoothly like a horseshoe. Notice the masterfully carved sculptures of Narasimha, Shiva with Nandi, and celestial couples on the pillars.", 
+        "kn": "ಹೊರಗಿನ ಕುದುರೆ ಲಾಳದ ಆಕಾರದ ಕಾರಿಡಾರ್‌ನಲ್ಲಿ ನಡೆದು ಕಟ್ಟಡದ ವಿಶಿಷ್ಟ ವಕ್ರತೆಯನ್ನು ಗಮನಿಸಿ. ಕಂಬಗಳ ಮೇಲಿನ ನರಸಿಂಹ, ನಂದಿ ಸಮೇತ ಶಿವ ಮತ್ತು ಮಿಥುನ ಶಿಲ್ಪಗಳನ್ನು ಸೂಕ್ಷ್ಮವಾಗಿ ವೀಕ್ಷಿಸಿ.", 
+        "hi": "बाहरी अर्धवृत्ताकार गलियारे में घूमें और देखें कि इमारत घोड़े की नाल की तरह कैसे मुड़ती है। खंभों पर नृसिंह, शिव-नंदी और आकाशीय जोड़ों की नक्काशी पर ध्यान दें।" 
+      },
+      "who_built": { 
+        "en": "It was commissioned during the Early Chalukya dynasty (7th-8th century CE) as part of their extraordinary architectural and structural experimentation across Aihole.", 
+        "kn": "ಇದನ್ನು ಆರಂಭಿಕ ಚಾಲುಕ್ಯ ರಾಜಮನೆತನದ ಕಾಲದಲ್ಲಿ (7-8ನೇ ಶತಮಾನ) ಐಹೊಳೆಯಲ್ಲಿ ನಡೆದ ಮಹಾನ್ ವಾಸ್ತುಶಿಲ್ಪ ಪ್ರಯೋಗಗಳ ಅಂಗವಾಗಿ ನಿರ್ಮಿಸಲಾಯಿತು.", 
+        "hi": "इसे प्रारंभिक चालुक्य शासकों द्वारा 7वीं-8वीं शताब्दी में ऐहोल के प्रसिद्ध वास्तुशिल्प प्रयोगों के तहत बनवाया गया था।" 
+      },
+      "architecture_special": {
+        "en": "Its rare apsidal (gajaprastha / elephant-back) plan derived from Buddhist chaitya halls combined with a Hindu Rekha-Nagara shikhara and an elevated pillared pradakshinapatha.",
+        "kn": "ಬೌದ್ಧ ಚೈತ್ಯಾಲಯಗಳಿಂದ ಪ್ರೇರಿತವಾದ ಗಜಪೃಷ್ಠ (ಆನೆ ಬೆನ್ನಿನ ಆಕಾರದ) ವಿನ್ಯಾಸವನ್ನು ಹಿಂದೂ ನಾಗರ ಶೈಲಿಯ ಶಿಖರ ಮತ್ತು ಎತ್ತರದ ಪ್ರದಕ್ಷಿಣಾ ಪಥದೊಂದಿಗೆ ಸಂಯೋಜಿಸಿರುವುದು ಇದರ ಅತಿ ದೊಡ್ಡ ವೈಶಿಷ್ಟ್ಯ.",
+        "hi": "बौद्ध चैत्य शैली से प्रेरित गजपृष्ठाकार (यू-आकार) योजना को हिंदू नागर शिखर और ऊंचे स्तंभयुक्त परिक्रमा पथ के साथ जोड़ना इसे भारत भर में अद्वितीय बनाता है।"
+      },
+      "explain_to_child": { 
+        "en": "Notice how the back of this temple is round like a horseshoe or an elephant's back? Long ago, building makers in Aihole were like scientists trying out fun, new shapes before building other temples!", 
+        "kn": "ಈ ದೇವಾಲಯದ ಹಿಂಭಾಗ ಆನೆಯ ಬೆನ್ನಿನಂತೆ ಅಥವಾ ಕುದುರೆ ಲಾಳದಂತೆ ಗುಂಡಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ! ಬಹಳ ಹಿಂದೆಯೇ ಐಹೊಳೆಯ ಶಿಲ್ಪಿಗಳು ಹೊಸ ಹೊಸ ಆಕಾರಗಳನ್ನು ಸಂಶೋಧಿಸುತ್ತಿದ್ದರು!", 
+        "hi": "ध्यान दें कि यह मंदिर पीछे से हाथी की पीठ या घोड़े की नाल की तरह मुड़ा हुआ है! प्राचीन काल में ऐहोल के शिल्पकार वैज्ञानिकों की तरह नए-नए आकार आज़मा रहे थे।" 
+      }
+    }
+  }
+]

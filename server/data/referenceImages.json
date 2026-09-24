@@ -1,0 +1,203 @@
+[
+  {
+    "id": "virupaksha_temple_pattadakal",
+    "monumentId": "virupaksha_temple_pattadakal",
+    "monumentName": "Virupaksha Temple",
+    "siteId": "pattadakal",
+    "siteName": "Pattadakal",
+    "filename": "virupaksha_temple_pattadakal.jpg",
+    "imagePath": "client/public/monument-images/virupaksha_temple_pattadakal.jpg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "652a261949a8755a6129e2fcd89070ceb597717b293e271b6d6a8428bcbb3bb2",
+    "phash": "ede093322dec131b",
+    "dhash": "1e3f2f4969300554",
+    "architecturalFeatures": [
+      "Dravidian-style shikhara",
+      "Nandi pavilion",
+      "Sculpted panels"
+    ],
+    "visualIdentifiers": [
+      "Large stepped tower",
+      "Nandi mandapa in front"
+    ]
+  },
+  {
+    "id": "mallikarjuna_temple_pattadakal",
+    "monumentId": "mallikarjuna_temple_pattadakal",
+    "monumentName": "Mallikarjuna Temple",
+    "siteId": "pattadakal",
+    "siteName": "Pattadakal",
+    "filename": "mallikarjuna_temple_pattadakal.jpg",
+    "imagePath": "client/public/monument-images/mallikarjuna_temple_pattadakal.jpg",
+    "width": 1280,
+    "height": 1707,
+    "sha256": "99d18583f2bfba667feb53a76182e1b8b10da04247a3ba4c87e56828552b71e4",
+    "phash": "f2f2c58d1c0cb5f0",
+    "dhash": "7b76620e666a52b8",
+    "architecturalFeatures": [
+      "Dravidian-style shikhara",
+      "Similar to Virupaksha but smaller"
+    ],
+    "visualIdentifiers": [
+      "Dravidian vimana",
+      "Hemispherical roof"
+    ]
+  },
+  {
+    "id": "papanatha_temple_pattadakal",
+    "monumentId": "papanatha_temple_pattadakal",
+    "monumentName": "Papanatha Temple",
+    "siteId": "pattadakal",
+    "siteName": "Pattadakal",
+    "filename": "papanatha_temple_pattadakal.jpg",
+    "imagePath": "client/public/monument-images/papanatha_temple_pattadakal.jpg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "361236ed8a4c75531ee9dcd39fe670e5fcac2e89b8bce1760fc6e2d2808797a6",
+    "phash": "9f8ae0705e8fb170",
+    "dhash": "35140181cd953672",
+    "architecturalFeatures": [
+      "Curvilinear shikhara",
+      "Transition style"
+    ],
+    "visualIdentifiers": [
+      "Curvilinear tower",
+      "Elaborate wall carvings"
+    ]
+  },
+  {
+    "id": "cave_1_badami",
+    "monumentId": "cave_1_badami",
+    "monumentName": "Cave 1",
+    "siteId": "badami",
+    "siteName": "Badami",
+    "filename": "cave_1_badami.jpg",
+    "imagePath": "client/public/monument-images/cave_1_badami.jpg",
+    "width": 1280,
+    "height": 1893,
+    "sha256": "0054efd387e6291ae6d749463dbb76734bdf30a0aa1b9d0b3dc125f582ae9e45",
+    "phash": "d7288c56635e1c37",
+    "dhash": "538256ebaaa3ddb1",
+    "architecturalFeatures": [
+      "Rock-cut pillars",
+      "Carved ceiling"
+    ],
+    "visualIdentifiers": [
+      "Rock-cut interior",
+      "Nataraja carving at entrance"
+    ]
+  },
+  {
+    "id": "cave_3_badami",
+    "monumentId": "cave_3_badami",
+    "monumentName": "Cave 3",
+    "siteId": "badami",
+    "siteName": "Badami",
+    "filename": "cave_3_badami.jpg",
+    "imagePath": "client/public/monument-images/cave_3_badami.jpg",
+    "width": 1280,
+    "height": 1927,
+    "sha256": "b8df6c04e1ab64c2016af4078e987f63174ee39518234d9c8a49330e3c479b69",
+    "phash": "8a353fc055ccde83",
+    "dhash": "95c1030a2c4b5a5c",
+    "architecturalFeatures": [
+      "Deep verandah",
+      "Elaborate column brackets"
+    ],
+    "visualIdentifiers": [
+      "Large pillars",
+      "Massive Vishnu avatars carved on walls"
+    ]
+  },
+  {
+    "id": "bhutanatha_temples_badami",
+    "monumentId": "bhutanatha_temples_badami",
+    "monumentName": "Bhutanatha Temples",
+    "siteId": "badami",
+    "siteName": "Badami",
+    "filename": "bhutanatha_temples_badami.jpg",
+    "imagePath": "client/public/monument-images/bhutanatha_temples_badami.jpg",
+    "width": 1280,
+    "height": 807,
+    "sha256": "28674eefe1a73ef00d52ea3d62ff30aa98f25c1aad2956470b7add8f3c2d3014",
+    "phash": "c466c6e5c8cae6e4",
+    "dhash": "1a6a16568eb5351c",
+    "architecturalFeatures": [
+      "Open mandapas",
+      "Stepped towers"
+    ],
+    "visualIdentifiers": [
+      "Temples by the lake",
+      "Red sandstone background"
+    ]
+  },
+  {
+    "id": "durga_temple_aihole",
+    "monumentId": "durga_temple_aihole",
+    "monumentName": "Durga Temple",
+    "siteId": "aihole",
+    "siteName": "Aihole",
+    "filename": "durga_temple_aihole.jpg",
+    "imagePath": "client/public/monument-images/durga_temple_aihole.jpg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "e214b5b884c411fcb68bb171386e6a5df5346a1d4183b6200b654ae31765f8a3",
+    "phash": "d192e5f973648b90",
+    "dhash": "33592407f3635975",
+    "architecturalFeatures": [
+      "Apsidal (curved back wall) plan",
+      "Elevated plinth",
+      "Pillared gallery"
+    ],
+    "visualIdentifiers": [
+      "U-shaped structure",
+      "Pillared corridor all around"
+    ]
+  },
+  {
+    "id": "lad_khan_temple_aihole",
+    "monumentId": "lad_khan_temple_aihole",
+    "monumentName": "Lad Khan Temple",
+    "siteId": "aihole",
+    "siteName": "Aihole",
+    "filename": "lad_khan_temple_aihole.jpg",
+    "imagePath": "client/public/monument-images/lad_khan_temple_aihole.jpg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "09d3222ee347487829b98a2f78741cd25bde051fcb963fe6a01c10d6c4ab4eb7",
+    "phash": "e4fc1b73e4821971",
+    "dhash": "f7dbed2e3bc61253",
+    "architecturalFeatures": [
+      "Flat roof",
+      "Small shrine on top",
+      "Massive pillars"
+    ],
+    "visualIdentifiers": [
+      "Flat slanting roof",
+      "Massive structure without a tower"
+    ]
+  },
+  {
+    "id": "meguti_jain_temple_aihole",
+    "monumentId": "meguti_jain_temple_aihole",
+    "monumentName": "Meguti Jain Temple",
+    "siteId": "aihole",
+    "siteName": "Aihole",
+    "filename": "meguti_jain_temple_aihole.jpg",
+    "imagePath": "client/public/monument-images/meguti_jain_temple_aihole.jpg",
+    "width": 1280,
+    "height": 960,
+    "sha256": "3cf9050650f0fcc24f064aa5e6e26ac0c033d13c44e4a6848c00f2d1b810b558",
+    "phash": "bebcc06133bccc49",
+    "dhash": "62131140e4c8a64d",
+    "architecturalFeatures": [
+      "Hilltop location",
+      "Dravidian structure without a tower"
+    ],
+    "visualIdentifiers": [
+      "Located on a hill",
+      "Incomplete superstructure"
+    ]
+  }
+]

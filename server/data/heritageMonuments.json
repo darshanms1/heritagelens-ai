@@ -1,0 +1,385 @@
+[
+  {
+    "monument_id": "virupaksha_temple_pattadakal",
+    "site_id": "pattadakal",
+    "monument_name": "Virupaksha Temple",
+    "alternate_names": [],
+    "type": "temple",
+    "period": "c. 740 CE",
+    "dynasty": "Chalukya",
+    "patron": "Queen Lokamahadevi",
+    "deity": "Shiva",
+    "architectural_style": "Dravidian",
+    "architectural_features": [
+      "Dravidian-style shikhara",
+      "Nandi pavilion",
+      "Sculpted panels"
+    ],
+    "historical_context": "Built to commemorate Vikramaditya II's victory over the Pallavas.",
+    "cultural_significance": "Still an active place of worship. Features intricate carvings of Ramayana and Mahabharata.",
+    "visitor_observation_points": [
+      "Observe the narrative panels on the walls",
+      "Check out the Nandi pavilion"
+    ],
+    "interesting_facts": [
+      "Built by a queen rather than a king."
+    ],
+    "visual_identifiers": [
+      "Large stepped tower",
+      "Nandi mandapa in front"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯ",
+        "summary": "ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯವು ಪಟ್ಟದಕಲ್ಲಿನ ಪ್ರಮುಖ ದೇವಾಲಯವಾಗಿದೆ."
+      },
+      "hi": {
+        "monument_name": "विरुपाक्ष मंदिर",
+        "summary": "विरुपाक्ष मंदिर पट्टदकल का एक प्रमुख मंदिर है।"
+      }
+    },
+    "image_url": "/monument-images/virupaksha_temple_pattadakal.jpg"
+  },
+  {
+    "monument_id": "mallikarjuna_temple_pattadakal",
+    "site_id": "pattadakal",
+    "monument_name": "Mallikarjuna Temple",
+    "alternate_names": [],
+    "type": "temple",
+    "period": "c. 740 CE",
+    "dynasty": "Chalukya",
+    "patron": "Queen Trailokyadevi",
+    "deity": "Shiva",
+    "architectural_style": "Dravidian",
+    "architectural_features": [
+      "Dravidian-style shikhara",
+      "Similar to Virupaksha but smaller"
+    ],
+    "historical_context": "Built alongside the Virupaksha temple by the second queen of Vikramaditya II.",
+    "cultural_significance": "A masterpiece of Early Chalukya architecture.",
+    "visitor_observation_points": [
+      "Compare its structure with the adjacent Virupaksha temple"
+    ],
+    "interesting_facts": [
+      "Often referred to as the sister temple to Virupaksha."
+    ],
+    "visual_identifiers": [
+      "Dravidian vimana",
+      "Hemispherical roof"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಮಲ್ಲಿಕಾರ್ಜುನ ದೇವಾಲಯ",
+        "summary": "ಮಲ್ಲಿಕಾರ್ಜುನ ದೇವಾಲಯವು ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯದ ಪಕ್ಕದಲ್ಲಿದೆ."
+      },
+      "hi": {
+        "monument_name": "मल्लिकार्जुन मंदिर",
+        "summary": "मल्लिकार्जुन मंदिर विरुपाक्ष मंदिर के पास स्थित है।"
+      }
+    },
+    "image_url": "/monument-images/mallikarjuna_temple_pattadakal.jpg"
+  },
+  {
+    "monument_id": "papanatha_temple_pattadakal",
+    "site_id": "pattadakal",
+    "monument_name": "Papanatha Temple",
+    "alternate_names": [],
+    "type": "temple",
+    "period": "c. 680-700 CE",
+    "dynasty": "Chalukya",
+    "patron": "Chalukya Kings",
+    "deity": "Shiva",
+    "architectural_style": "Nagara (North Indian)",
+    "architectural_features": [
+      "Curvilinear shikhara",
+      "Transition style"
+    ],
+    "historical_context": "Shows the transition from Nagara to Dravidian style architecture.",
+    "cultural_significance": "Contains detailed narrative sculptural panels from epics.",
+    "visitor_observation_points": [
+      "Look for the narrative sculptures on the outer walls"
+    ],
+    "interesting_facts": [
+      "It was started in Nagara style but shows Dravidian elements in later additions."
+    ],
+    "visual_identifiers": [
+      "Curvilinear tower",
+      "Elaborate wall carvings"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಪಾಪನಾಥ ದೇವಾಲಯ",
+        "summary": "ಪಾಪನಾಥ ದೇವಾಲಯವು ಉತ್ತರ ಭಾರತೀಯ ಶೈಲಿಯಲ್ಲಿದೆ."
+      },
+      "hi": {
+        "monument_name": "पापनाथ मंदिर",
+        "summary": "पापनाथ मंदिर उत्तर भारतीय शैली में बना है।"
+      }
+    },
+    "image_url": "/monument-images/papanatha_temple_pattadakal.jpg"
+  },
+  {
+    "monument_id": "cave_1_badami",
+    "site_id": "badami",
+    "monument_name": "Cave 1",
+    "alternate_names": [],
+    "type": "cave_temple",
+    "period": "6th century CE",
+    "dynasty": "Chalukya",
+    "patron": "Chalukya Kings",
+    "deity": "Shiva",
+    "architectural_style": "Rock-cut",
+    "architectural_features": [
+      "Rock-cut pillars",
+      "Carved ceiling"
+    ],
+    "historical_context": "One of the earliest rock-cut shrines in the region.",
+    "cultural_significance": "Contains the famous 18-armed Nataraja sculpture.",
+    "visitor_observation_points": [
+      "The dancing Shiva sculpture at the entrance"
+    ],
+    "interesting_facts": [
+      "The 18 arms of Shiva form 81 different dance poses."
+    ],
+    "visual_identifiers": [
+      "Rock-cut interior",
+      "Nataraja carving at entrance"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಗುಹೆ ೧",
+        "summary": "ಬಾದಾಮಿಯ ಗುಹೆ ೧ ಶಿವನಿಗೆ ಸಮರ್ಪಿತವಾಗಿದೆ."
+      },
+      "hi": {
+        "monument_name": "गुफा १",
+        "summary": "बादामी की गुफा १ शिव को समर्पित है।"
+      }
+    },
+    "image_url": "/monument-images/cave_1_badami.jpg"
+  },
+  {
+    "monument_id": "cave_3_badami",
+    "site_id": "badami",
+    "monument_name": "Cave 3",
+    "alternate_names": [],
+    "type": "cave_temple",
+    "period": "578 CE",
+    "dynasty": "Chalukya",
+    "patron": "King Mangalesha",
+    "deity": "Vishnu",
+    "architectural_style": "Rock-cut",
+    "architectural_features": [
+      "Deep verandah",
+      "Elaborate column brackets"
+    ],
+    "historical_context": "Dated exactly to 578 CE by an inscription.",
+    "cultural_significance": "Largest and most elaborate of the Badami caves.",
+    "visitor_observation_points": [
+      "Giant reliefs of Trivikrama and Varaha"
+    ],
+    "interesting_facts": [
+      "Contains remnants of ancient fresco paintings."
+    ],
+    "visual_identifiers": [
+      "Large pillars",
+      "Massive Vishnu avatars carved on walls"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಗುಹೆ ೩",
+        "summary": "ಗುಹೆ ೩ ಬಾದಾಮಿಯ ಅತಿ ದೊಡ್ಡ ಗುಹಾಲಯವಾಗಿದೆ."
+      },
+      "hi": {
+        "monument_name": "गुफा ३",
+        "summary": "गुफा ३ बादामी की सबसे बड़ी गुफा है।"
+      }
+    },
+    "image_url": "/monument-images/cave_3_badami.jpg"
+  },
+  {
+    "monument_id": "bhutanatha_temples_badami",
+    "site_id": "badami",
+    "monument_name": "Bhutanatha Temples",
+    "alternate_names": [],
+    "type": "temple_complex",
+    "period": "7th-11th century CE",
+    "dynasty": "Chalukya",
+    "patron": "Chalukya Kings",
+    "deity": "Shiva (Bhutanatha)",
+    "architectural_style": "Dravidian and Nagara mix",
+    "architectural_features": [
+      "Open mandapas",
+      "Stepped towers"
+    ],
+    "historical_context": "Built over several centuries, showing evolving architectural styles.",
+    "cultural_significance": "Picturesque setting on the eastern shore of Agastya Lake.",
+    "visitor_observation_points": [
+      "The reflection in the lake during sunset"
+    ],
+    "interesting_facts": [
+      "The complex extends right into the waters of Agastya Lake."
+    ],
+    "visual_identifiers": [
+      "Temples by the lake",
+      "Red sandstone background"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಭೂತನಾಥ ದೇವಾಲಯಗಳು",
+        "summary": "ಅಗಸ್ತ್ಯ ತೀರ್ಥದ ದಡದಲ್ಲಿರುವ ಸುಂದರ ದೇವಾಲಯಗಳು."
+      },
+      "hi": {
+        "monument_name": "भूतनाथ मंदिर",
+        "summary": "अगस्त्य झील के किनारे स्थित सुंदर मंदिर।"
+      }
+    },
+    "image_url": "/monument-images/bhutanatha_temples_badami.jpg"
+  },
+  {
+    "monument_id": "durga_temple_aihole",
+    "site_id": "aihole",
+    "monument_name": "Durga Temple",
+    "alternate_names": [],
+    "type": "temple",
+    "period": "7th-8th century CE",
+    "dynasty": "Chalukya",
+    "patron": "Chalukya Kings",
+    "deity": "Surya/Shiva",
+    "architectural_style": "Apsidal",
+    "architectural_features": [
+      "Apsidal (curved back wall) plan",
+      "Elevated plinth",
+      "Pillared gallery"
+    ],
+    "historical_context": "One of the most uniquely designed temples in India.",
+    "cultural_significance": "Shows the experimental nature of early Chalukyan architecture.",
+    "visitor_observation_points": [
+      "Walk the curved pillared corridor"
+    ],
+    "interesting_facts": [
+      "'Durga' here means protector/fortress, not the goddess Durga."
+    ],
+    "visual_identifiers": [
+      "U-shaped structure",
+      "Pillared corridor all around"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ದುರ್ಗಾ ದೇವಾಲಯ",
+        "summary": "ಐಹೊಳೆಯ ದುರ್ಗಾ ದೇವಾಲಯವು ವಿಶಿಷ್ಟವಾದ ಅರ್ಧಚಂದ್ರಾಕಾರದ ವಿನ್ಯಾಸ ಹೊಂದಿದೆ."
+      },
+      "hi": {
+        "monument_name": "दुर्गा मंदिर",
+        "summary": "ऐहोल का दुर्गा मंदिर अपनी अनूठी संरचना के लिए प्रसिद्ध है।"
+      }
+    },
+    "image_url": "/monument-images/durga_temple_aihole.jpg"
+  },
+  {
+    "monument_id": "lad_khan_temple_aihole",
+    "site_id": "aihole",
+    "monument_name": "Lad Khan Temple",
+    "alternate_names": [],
+    "type": "temple",
+    "period": "c. 5th century CE",
+    "dynasty": "Chalukya",
+    "patron": "Chalukya Kings",
+    "deity": "Shiva",
+    "architectural_style": "Panchayatana variant",
+    "architectural_features": [
+      "Flat roof",
+      "Small shrine on top",
+      "Massive pillars"
+    ],
+    "historical_context": "Originally a royal assembly hall, later converted to a temple.",
+    "cultural_significance": "One of the oldest structural temples in the region.",
+    "visitor_observation_points": [
+      "Look at the roof structure imitating wooden logs"
+    ],
+    "interesting_facts": [
+      "Named after a Muslim commander who used it as his residence centuries later."
+    ],
+    "visual_identifiers": [
+      "Flat slanting roof",
+      "Massive structure without a tower"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಲಾಡ್ ಖಾನ್ ದೇವಾಲಯ",
+        "summary": "ಇದು ಐಹೊಳೆಯ ಅತ್ಯಂತ ಹಳೆಯ ದೇವಾಲಯಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ."
+      },
+      "hi": {
+        "monument_name": "लाड खान मंदिर",
+        "summary": "यह ऐहोल के सबसे पुराने मंदिरों में से एक है।"
+      }
+    },
+    "image_url": "/monument-images/lad_khan_temple_aihole.jpg"
+  },
+  {
+    "monument_id": "meguti_jain_temple_aihole",
+    "site_id": "aihole",
+    "monument_name": "Meguti Jain Temple",
+    "alternate_names": [],
+    "type": "jain_temple",
+    "period": "634 CE",
+    "dynasty": "Chalukya",
+    "patron": "Ravikirti",
+    "deity": "Mahavira",
+    "architectural_style": "Dravidian",
+    "architectural_features": [
+      "Hilltop location",
+      "Dravidian structure without a tower"
+    ],
+    "historical_context": "Contains a crucial inscription by court poet Ravikirti dating the temple to 634 CE.",
+    "cultural_significance": "Important for Jain heritage and historical chronology.",
+    "visitor_observation_points": [
+      "Read the Aihole inscription on the outer wall",
+      "Enjoy the panoramic view of Aihole"
+    ],
+    "interesting_facts": [
+      "The Aihole inscription mentions poet Kalidasa, helping date his era."
+    ],
+    "visual_identifiers": [
+      "Located on a hill",
+      "Incomplete superstructure"
+    ],
+    "sources": [
+      "Archaeological Survey of India"
+    ],
+    "language_adaptations": {
+      "kn": {
+        "monument_name": "ಮೇಗುತಿ ಜೈನ ದೇವಾಲಯ",
+        "summary": "ಗುಡ್ಡದ ಮೇಲಿರುವ ಜೈನ ದೇವಾಲಯ, ಐತಿಹಾಸಿಕ ಶಾಸನವನ್ನು ಹೊಂದಿದೆ."
+      },
+      "hi": {
+        "monument_name": "मेगुती जैन मंदिर",
+        "summary": "पहाड़ी पर स्थित यह जैन मंदिर अपने ऐतिहासिक शिलालेख के लिए जाना जाता है।"
+      }
+    },
+    "image_url": "/monument-images/meguti_jain_temple_aihole.jpg"
+  }
+]
