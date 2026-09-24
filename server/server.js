@@ -85,6 +85,18 @@ const handleHealthCheck = (req, res) => {
 
 app.get('/api/health', handleHealthCheck);
 app.get('/health', handleHealthCheck);
+app.get('/', (req, res) => {
+  const clientDistPath = path.join(__dirname, '..', 'client', 'dist');
+  if (fs.existsSync(path.join(clientDistPath, 'index.html'))) {
+    return res.sendFile(path.join(clientDistPath, 'index.html'));
+  }
+  res.json({
+    status: 'ok',
+    service: 'HeritageLens AI Backend',
+    message: 'Welcome to HeritageLens AI API',
+    health: '/health'
+  });
+});
 
 // Mount API routes
 const heritageRoutes = require('./routes/heritageRoutes');

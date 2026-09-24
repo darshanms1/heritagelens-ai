@@ -194,8 +194,12 @@ async function matchImage(imageBufferOrPath) {
 async function prewarm() {
   try {
     loadGallery();
-    await getExtractor();
-    console.log('[LocalVisionMatcher] Prewarmed and ready.');
+    if (process.env.ENABLE_LOCAL_CLIP === 'true') {
+      await getExtractor();
+      console.log('[LocalVisionMatcher] Prewarmed and ready.');
+    } else {
+      console.log('[LocalVisionMatcher] Gallery loaded. ONNX model loading deferred to conserve container memory.');
+    }
   } catch (err) {
     console.warn('[LocalVisionMatcher] Prewarm skipped or failed:', err.message);
   }
