@@ -13,7 +13,7 @@ services:
       - key: PORT
         value: 10000
       - key: CLIENT_URL
-        value: "*"
+        value: "https://client-nine-mu-90.vercel.app,*"
       - key: GEMINI_API_KEY
         sync: false
       - key: GROQ_API_KEY
