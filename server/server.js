@@ -136,7 +136,6 @@ initDatabase().catch(err => console.error('[Database] Init notice:', err.message
 const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`[HeritageLens AI] Backend listening on 0.0.0.0:${PORT}`);
   console.log(`[HeritageLens AI] Allowed client origins:`, allowedOrigins);
-  localVisionMatcher.prewarm();
 });
 
 // Graceful shutdown
@@ -145,6 +144,15 @@ process.on('SIGTERM', () => {
   server.close(() => console.log('[HeritageLens AI] Process terminated.'));
 });
 
+process.on('SIGINT', () => {
+  console.log('[HeritageLens AI] SIGINT received. Closing HTTP server cleanly...');
+  server.close(() => console.log('[HeritageLens AI] Process terminated.'));
+});
+
 process.on('unhandledRejection', (reason, promise) => {
   console.error('[HeritageLens AI] Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('[HeritageLens AI] Uncaught Exception:', err);
 });
