@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { pipeline } = require('@xenova/transformers');
+let pipeline = null;
 
 // In-memory cache for reference gallery embeddings
 let gallery = null;
@@ -40,6 +40,9 @@ function normalize(vec) {
 async function getExtractor() {
   if (!extractorPromise) {
     console.log('[LocalVisionMatcher] Initializing Xenova/clip-vit-base-patch32 (quantized ONNX)...');
+    if (!pipeline) {
+      pipeline = require('@xenova/transformers').pipeline;
+    }
     extractorPromise = pipeline('image-feature-extraction', 'Xenova/clip-vit-base-patch32', {
       quantized: true
     }).catch(err => {
@@ -89,6 +92,12 @@ async function extractEmbedding(imageBufferOrPath) {
  * @returns {Promise<Object>} Match result with top candidates, margin, and confidence
  */
 async function matchImage(imageBufferOrPath) {
+  // On memory-constrained cloud environments (e.g. Render Free Tier 512MB RAM), skip heavy ONNX embedding extraction
+  if (process.env.ENABLE_LOCAL_CLIP !== 'true' && (process.env.NODE_ENV === 'production' || process.env.RENDER === 'true')) {
+    console.log('[LocalVisionMatcher] Skipping local ONNX CLIP in cloud production environment to preserve memory ceiling.');
+    return null;
+  }
+
   const g = loadGallery();
   if (!g.monuments || g.monuments.length === 0) {
     return {

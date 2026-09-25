@@ -40,11 +40,16 @@ const VALID_MONUMENT_IDS = [
 async function callGeminiVision(apiKey, imageBuffer, mimeType, localHint = null) {
   const ai = new GoogleGenAI({ apiKey });
 
-  const hintText = localHint ? `
+  const hintName = localHint?.monument_name || localHint?.monumentName;
+  const hintSite = localHint?.site_name || localHint?.siteName;
+  const hintScore = localHint?.score != null ? `, score: ${localHint.score}` : '';
+  const altCandidate = localHint?.candidates?.[1]?.monument_name || 'None';
+
+  const hintText = hintName ? `
 LOCAL VISUAL FEATURE ANALYSIS PRE-MATCH:
 The local vision matching engine observed visual similarity to:
-- Most likely candidate: ${localHint.monument_name} (Site: ${localHint.site_name}, score: ${localHint.score})
-- Alternative candidate: ${localHint.candidates?.[1]?.monument_name || 'None'}
+- Most likely candidate: ${hintName} (Site: ${hintSite || 'Bagalkot'}${hintScore})
+- Alternative candidate: ${altCandidate}
 Please verify if the architectural features in the image truly correspond to this monument or an alternative from the catalog.
 ` : '';
 
@@ -81,9 +86,9 @@ Return ONLY a valid JSON object matching this exact schema, with no markdown or 
 }
 `;
 
-  // Strict 3.5s timeout to guarantee frontend responsiveness
+  // Resilient 15s timeout to guarantee cloud AI response without premature cancellation
   const timeoutPromise = new Promise((_, reject) => 
-    setTimeout(() => reject(new Error("Gemini visual identification timed out (3.5s limit exceeded)")), 3500)
+    setTimeout(() => reject(new Error("Gemini visual identification timed out (15s limit exceeded)")), 15000)
   );
 
   const apiPromise = ai.models.generateContent({
@@ -247,7 +252,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
   // If simulating Gemini error, handle graceful local fallback immediately
   if (simError) {
     console.log(`[VisionService] Handling simulated Gemini error: ${simError}`);
-    return handleGeminiFailure(simError, localResult);
+    return handleGeminiFailure(simError, localResult, pMatch?.candidates);
   }
 
   // =========================================================================
@@ -258,7 +263,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
 
   if (groqApiKey && groqApiKey.trim() !== '') {
     try {
-      groqResult = await groqVision.analyzeImage(imageBuffer, mimeType, localResult);
+      groqResult = await groqVision.analyzeImage(imageBuffer, mimeType, localResult || pMatch?.bestCandidate);
     } catch (gErr) {
       console.warn('[VisionService] Groq Qwen 3.8-27B call encountered issue:', gErr.message);
     }
@@ -271,12 +276,15 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
       ...(localResult?.visual_clues || [])
     ])).slice(0, 4);
 
+    const siteNames = { pattadakal: 'Pattadakal', badami: 'Badami', aihole: 'Aihole' };
+    const siteName = siteNames[groqResult.site_id] || localResult?.site_name || pMatch?.bestCandidate?.siteName || "Bagalkot Heritage Region";
+
     return {
       identified: true,
-      site_id: groqResult.site_id || localResult?.site_id,
-      siteId: groqResult.site_id || localResult?.site_id,
-      site_name: localResult?.site_name || "Bagalkot Heritage Region",
-      siteName: localResult?.site_name || "Bagalkot Heritage Region",
+      site_id: groqResult.site_id || localResult?.site_id || pMatch?.bestCandidate?.siteId,
+      siteId: groqResult.site_id || localResult?.site_id || pMatch?.bestCandidate?.siteId,
+      site_name: siteName,
+      siteName: siteName,
       monument_id: groqResult.monument_id,
       monumentId: groqResult.monument_id,
       monument_name: groqResult.monument_name,
@@ -302,7 +310,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
         groqVerification: 'SUCCESS',
         latencyMs: groqResult.latencyMs
       },
-      candidates: localResult?.candidates || []
+      candidates: localResult?.candidates?.length ? localResult.candidates : (pMatch?.candidates || [])
     };
   }
 
@@ -331,7 +339,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
         clipSimilarity: localResult?.score ? String(localResult.score) : 'N/A',
         groqVerification: 'SUCCESS (Confirmed out-of-catalog)'
       },
-      candidates: localResult?.candidates || []
+      candidates: localResult?.candidates?.length ? localResult.candidates : (pMatch?.candidates || [])
     };
   }
 
@@ -339,7 +347,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
 
   // If no Gemini key, rely on local result without failing
   if (!apiKey || apiKey.trim() === '') {
-    return handleGeminiFailure('Gemini API key unset', localResult);
+    return handleGeminiFailure('Gemini API key unset', localResult, pMatch?.candidates);
   }
 
   // =========================================================================
@@ -349,7 +357,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
   let geminiError = null;
 
   try {
-    geminiResult = await callGeminiVision(apiKey, imageBuffer, mimeType, localResult);
+    geminiResult = await callGeminiVision(apiKey, imageBuffer, mimeType, localResult || pMatch?.bestCandidate);
   } catch (err) {
     geminiError = err;
     console.warn('[VisionService] Gemini Vision call encountered issue:', err.message);
@@ -362,12 +370,15 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
       ...(localResult?.visual_clues || [])
     ])).slice(0, 4);
 
+    const siteNames = { pattadakal: 'Pattadakal', badami: 'Badami', aihole: 'Aihole' };
+    const siteName = siteNames[geminiResult.site_id] || localResult?.site_name || pMatch?.bestCandidate?.siteName || "Bagalkot Heritage Region";
+
     return {
       identified: true,
-      site_id: geminiResult.site_id || localResult?.site_id,
-      siteId: geminiResult.site_id || localResult?.site_id,
-      site_name: localResult?.site_name || "Bagalkot Heritage Region",
-      siteName: localResult?.site_name || "Bagalkot Heritage Region",
+      site_id: geminiResult.site_id || localResult?.site_id || pMatch?.bestCandidate?.siteId,
+      siteId: geminiResult.site_id || localResult?.site_id || pMatch?.bestCandidate?.siteId,
+      site_name: siteName,
+      siteName: siteName,
       monument_id: geminiResult.monument_id,
       monumentId: geminiResult.monument_id,
       monument_name: geminiResult.monument_name,
@@ -390,7 +401,7 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
         clipSimilarity: localResult?.score ? String(localResult.score) : 'N/A',
         geminiVerification: 'SUCCESS'
       },
-      candidates: localResult?.candidates || []
+      candidates: localResult?.candidates?.length ? localResult.candidates : (pMatch?.candidates || [])
     };
   }
 
@@ -419,23 +430,30 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
         clipSimilarity: localResult?.score ? String(localResult.score) : 'N/A',
         geminiVerification: 'SUCCESS (Confirmed out-of-catalog)'
       },
-      candidates: localResult?.candidates || []
+      candidates: localResult?.candidates?.length ? localResult.candidates : (pMatch?.candidates || [])
     };
   }
 
   // If Gemini failed (timeout, 503, 429) or was unavailable
-  return handleGeminiFailure(geminiError?.message || 'Gemini unavailable', localResult);
+  return handleGeminiFailure(geminiError?.message || 'Gemini unavailable', localResult, pMatch?.candidates);
 }
 
 /**
  * Handle Gemini failure gracefully using local visual results
  * NEVER returns a dead-end "Live AI Identification Unavailable"
  */
-function handleGeminiFailure(errorMessage, localResult) {
+function handleGeminiFailure(errorMessage, localResult, fallbackCandidates = []) {
   const is503 = String(errorMessage).includes('503');
   const is429 = String(errorMessage).includes('429');
   const isTimeout = String(errorMessage).includes('timed out');
   const errorStatus = is503 ? 'FAILED (HTTP 503 Busy)' : is429 ? 'FAILED (HTTP 429 Limit)' : isTimeout ? 'FAILED (Timeout)' : 'FAILED';
+
+  const defaultCandidates = [
+    { monument_id: 'virupaksha_temple_pattadakal', monument_name: 'Virupaksha Temple', site_name: 'Pattadakal', site_id: 'pattadakal' },
+    { monument_id: 'cave_3_badami', monument_name: 'Cave 3', site_name: 'Badami', site_id: 'badami' },
+    { monument_id: 'durga_temple_aihole', monument_name: 'Durga Temple', site_name: 'Aihole', site_id: 'aihole' }
+  ];
+  const candidates = localResult?.candidates?.length ? localResult.candidates : (fallbackCandidates?.length ? fallbackCandidates : defaultCandidates);
 
   // Case A: Local vision match is HIGH confidence
   if (localResult && localResult.confidence_label === 'high') {
@@ -456,7 +474,6 @@ function handleGeminiFailure(errorMessage, localResult) {
       distance: 0,
       clip_similarity: localResult.score,
       visual_clues: localResult.visual_clues || [],
-      confidence_label: 'high',
       reason: `Identified via local visual matching (${is503 ? 'cloud AI 503 fallback' : is429 ? 'cloud quota fallback' : 'resilient fallback'}).`,
       geminiVerified: false,
       geminiStatus: errorStatus,
@@ -468,7 +485,7 @@ function handleGeminiFailure(errorMessage, localResult) {
         clipSimilarity: `${localResult.score} (margin: ${localResult.margin})`,
         geminiVerification: errorStatus
       },
-      candidates: localResult.candidates || []
+      candidates
     };
   }
 
@@ -503,7 +520,7 @@ function handleGeminiFailure(errorMessage, localResult) {
         clipSimilarity: `${localResult.score}`,
         geminiVerification: errorStatus
       },
-      candidates: localResult.candidates || []
+      candidates
     };
   }
 
@@ -526,13 +543,13 @@ function handleGeminiFailure(errorMessage, localResult) {
     geminiStatus: errorStatus,
     debug: {
       referenceImagesCount: 9,
-      bestMatch: localResult?.candidates?.[0]?.monument_name || 'None',
+      bestMatch: candidates[0]?.monument_name || 'None',
       matchMethod: 'none',
       hashDistance: 'N/A',
       clipSimilarity: localResult?.score ? String(localResult.score) : 'N/A',
       geminiVerification: errorStatus
     },
-    candidates: localResult?.candidates || []
+    candidates
   };
 }
 

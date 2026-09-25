@@ -6,6 +6,7 @@ import { PlanJourneyPage } from './pages/PlanJourneyPage';
 import { PassportPage } from './pages/PassportPage';
 import { ExplorePage } from './pages/ExplorePage';
 import { useHeritage } from './hooks/useHeritage';
+import { API_URL } from './utils/constants';
 
 function App() {
   const {
@@ -29,6 +30,12 @@ function App() {
 
   const [previousView, setPreviousView] = React.useState('discover');
   const [siteFilter, setSiteFilter] = React.useState('all');
+
+  React.useEffect(() => {
+    // Non-blocking pre-warm ping to ensure backend is warm
+    const rawUrl = API_URL.endsWith('/api') ? API_URL.slice(0, -4) : API_URL;
+    fetch(`${rawUrl}/health`, { mode: 'cors' }).catch(() => {});
+  }, []);
 
   const handleNavigate = (targetView, filter = 'all') => {
     if (filter) setSiteFilter(filter);

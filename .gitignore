@@ -40,3 +40,7 @@ npm-debug.log*
 # Uploads (runtime)
 server/uploads/*
 !server/uploads/.gitkeep
+
+# User local files
+*.pptx
+.vercel/

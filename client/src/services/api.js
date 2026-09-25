@@ -17,7 +17,7 @@ const handleResponse = async (response) => {
 
 export const analyzeImage = async (file, language, level) => {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 30000);
+  const timeoutId = setTimeout(() => controller.abort(), 75000);
 
   try {
     const formData = new FormData();

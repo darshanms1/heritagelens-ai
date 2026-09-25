@@ -94,9 +94,11 @@ async function analyzeImage(imageBuffer, mimeType = 'image/jpeg', localHint = nu
     throw new Error('GROQ_API_KEY is not configured');
   }
 
-  const hintText = localHint ? `
+  const hintName = localHint?.monument_name || localHint?.monumentName || localHint?.monument_id || localHint?.monumentId;
+  const hintSite = localHint?.site_name || localHint?.siteName || localHint?.site_id || localHint?.siteId;
+  const hintText = hintName ? `
 LOCAL PRE-MATCH CONTEXT:
-The local vision matching engine noted similarity to: ${localHint.monument_name || localHint.monument_id} (Site: ${localHint.site_name || localHint.site_id}).
+The local vision matching engine noted similarity to: ${hintName} (Site: ${hintSite || 'Bagalkot'}).
 Verify if the architectural features in the image match this monument or another from the catalog.
 ` : '';
 
@@ -134,7 +136,7 @@ Return ONLY a valid JSON object matching this exact schema, with no markdown or 
   const imageUrl = `data:${mimeType || 'image/jpeg'};base64,${base64Data}`;
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 8500);
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
 
   try {
     const startTime = Date.now();
@@ -236,7 +238,7 @@ Return ONLY a valid JSON object matching this exact schema, with no markdown or 
   } catch (err) {
     clearTimeout(timeoutId);
     if (err.name === 'AbortError') {
-      throw new Error(`Groq Qwen 3.8-27B vision call timed out (5.5s exceeded)`);
+      throw new Error(`Groq Qwen 3.8-27B vision call timed out (15s exceeded)`);
     }
     throw err;
   }
