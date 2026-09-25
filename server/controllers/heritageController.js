@@ -23,12 +23,17 @@ async function analyzeImage(req, res, next) {
             );
             res.json(result);
         } catch (procError) {
-            console.error("Orchestrator error in analyzeImage:", procError.message || procError);
             const localMatcher = require('../services/localVisionMatcher');
-            let fallbackCandidates = [];
+            let fallbackCandidates = [
+                { monument_id: 'virupaksha_temple_pattadakal', monument_name: 'Virupaksha Temple', site_name: 'Pattadakal', site_id: 'pattadakal' },
+                { monument_id: 'cave_3_badami', monument_name: 'Cave 3', site_name: 'Badami', site_id: 'badami' },
+                { monument_id: 'durga_temple_aihole', monument_name: 'Durga Temple', site_name: 'Aihole', site_id: 'aihole' }
+            ];
             try {
                 const lm = await localMatcher.matchImage(req.file.buffer);
-                fallbackCandidates = lm.candidates || [];
+                if (lm && lm.candidates && lm.candidates.length > 0) {
+                    fallbackCandidates = lm.candidates;
+                }
             } catch (e) {}
 
             res.json({

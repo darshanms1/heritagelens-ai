@@ -38,6 +38,9 @@ function normalize(vec) {
 
 // Singleton extractor loader
 async function getExtractor() {
+  if (process.env.ENABLE_LOCAL_CLIP !== 'true') {
+    throw new Error('Local ONNX CLIP is disabled. Set ENABLE_LOCAL_CLIP=true to enable.');
+  }
   if (!extractorPromise) {
     console.log('[LocalVisionMatcher] Initializing Xenova/clip-vit-base-patch32 (quantized ONNX)...');
     if (!pipeline) {
@@ -92,9 +95,8 @@ async function extractEmbedding(imageBufferOrPath) {
  * @returns {Promise<Object>} Match result with top candidates, margin, and confidence
  */
 async function matchImage(imageBufferOrPath) {
-  // On memory-constrained cloud environments (e.g. Render Free Tier 512MB RAM), skip heavy ONNX embedding extraction
-  if (process.env.ENABLE_LOCAL_CLIP !== 'true' && (process.env.NODE_ENV === 'production' || process.env.RENDER === 'true')) {
-    console.log('[LocalVisionMatcher] Skipping local ONNX CLIP in cloud production environment to preserve memory ceiling.');
+  // Local ONNX CLIP requires ~400MB memory. Skip unless explicitly enabled via ENABLE_LOCAL_CLIP=true
+  if (process.env.ENABLE_LOCAL_CLIP !== 'true') {
     return null;
   }
 

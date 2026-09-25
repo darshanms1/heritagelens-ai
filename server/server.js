@@ -13,6 +13,28 @@ if (fs.existsSync(envLocalPath)) {
 }
 dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
+// In-memory circular log buffer for live diagnostics
+const logHistory = [];
+const originalLog = console.log;
+const originalWarn = console.warn;
+const originalError = console.error;
+
+console.log = function(...args) {
+  logHistory.push(`[${new Date().toISOString()}] [LOG] ${args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ')}`);
+  if (logHistory.length > 100) logHistory.shift();
+  originalLog.apply(console, args);
+};
+console.warn = function(...args) {
+  logHistory.push(`[${new Date().toISOString()}] [WARN] ${args.map(a => typeof a === 'object' ? JSON.stringify(a) : a).join(' ')}`);
+  if (logHistory.length > 100) logHistory.shift();
+  originalWarn.apply(console, args);
+};
+console.error = function(...args) {
+  logHistory.push(`[${new Date().toISOString()}] [ERROR] ${args.map(a => typeof a === 'object' ? (a?.stack || JSON.stringify(a)) : a).join(' ')}`);
+  if (logHistory.length > 100) logHistory.shift();
+  originalError.apply(console, args);
+};
+
 const app = express();
 const PORT = parseInt(process.env.PORT, 10) || 5000;
 
@@ -85,6 +107,7 @@ const handleHealthCheck = (req, res) => {
 
 app.get('/api/health', handleHealthCheck);
 app.get('/health', handleHealthCheck);
+app.get('/api/debug-logs', (req, res) => res.json({ logs: logHistory }));
 app.get('/', (req, res) => {
   const clientDistPath = path.join(__dirname, '..', 'client', 'dist');
   if (fs.existsSync(path.join(clientDistPath, 'index.html'))) {
