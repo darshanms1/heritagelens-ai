@@ -113,11 +113,11 @@ ${hintText}
 Analyze the provided image and determine if it shows one of the 9 monuments listed above.
 
 STRICT RULES:
-1. ONLY match the image if you see clear architectural features corresponding to one of the 9 monuments in the catalog above.
-2. If the image is of an unrelated temple, modern building, landscape, animal, person, food, or any monument outside this list, you MUST return identified = false.
+1. ONLY match the image if you see clear architectural features corresponding to one of the 9 Chalukyan monuments in the catalog above.
+2. If the image shows any other style (such as Hoysala star-shaped soapstone temples like Somnathpura/Belur/Halebidu, Vijayanagara temples like Hampi, Chola tall gopurams, Khajuraho, north Indian Nagara), or an unrelated building, landscape, or object, you MUST return identified = false.
 3. Do NOT invent monuments, dynasties, or dates.
 4. Set confidence_label to:
-   - "high" only if key architectural markers are clearly visible and unambiguous.
+   - "high" only if key architectural markers of the specific Bagalkot Chalukyan monument are clearly visible and unambiguous.
    - "medium" if partially obscured or from an atypical angle, but features match.
    - "low" or "unknown" if ambiguous, blurry, or not in the catalog.
 
@@ -132,8 +132,19 @@ Return ONLY a valid JSON object matching this exact schema, with no markdown or 
   "reason": "Brief visual evidence explaining why this monument was or was not matched"
 }`;
 
-  const base64Data = imageBuffer.toString('base64');
-  const imageUrl = `data:${mimeType || 'image/jpeg'};base64,${base64Data}`;
+  let processedBuffer = imageBuffer;
+  try {
+    const sharp = require('sharp');
+    processedBuffer = await sharp(imageBuffer)
+      .resize(480, 480, { fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 80 })
+      .toBuffer();
+  } catch (_) {
+    // Graceful fallback to raw buffer if sharp is unavailable
+  }
+
+  const base64Data = processedBuffer.toString('base64');
+  const imageUrl = `data:image/jpeg;base64,${base64Data}`;
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 15000);
@@ -171,6 +182,24 @@ Return ONLY a valid JSON object matching this exact schema, with no markdown or 
       let errorJson = null;
       try { errorJson = JSON.parse(errorText); } catch (_) {}
       const errMsg = errorJson?.error?.message || `HTTP ${response.status}: ${response.statusText}`;
+
+      if (response.status === 429) {
+        console.warn(`[GroqVision] Rate limit reached (429): ${errMsg}`);
+        return {
+          identified: false,
+          site_id: null,
+          monument_id: null,
+          monument_name: 'Unknown',
+          visual_clues: [],
+          confidence_label: 'unknown',
+          reason: 'Groq vision rate limit reached (7,000 ITPM limit).',
+          model: model,
+          provider: 'groq',
+          rateLimited: true,
+          latencyMs: latency
+        };
+      }
+
       throw new Error(`Groq API Error (${response.status}): ${errMsg}`);
     }
 

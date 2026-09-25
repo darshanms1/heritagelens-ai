@@ -65,12 +65,12 @@ ${hintText}
 Analyze the provided image and determine if it shows one of the 9 monuments listed above.
 
 STRICT RULES:
-1. ONLY match the image if you see clear, distinct architectural features corresponding to one of the 9 monuments in the catalog above.
-2. If the image is of an unrelated temple, landscape, person, modern building, animal, food, or any monument outside this list, you MUST return identified = false.
+1. ONLY match the image if you see clear, distinct architectural features corresponding to one of the 9 Chalukyan monuments in the catalog above.
+2. If the image is of a non-Chalukyan temple (e.g. Hoysala, Chola, Vijayanagara, north Indian Nagara), or an unrelated building, landscape, or person, you MUST return identified = false.
 3. Do NOT invent or guess monuments, sites, dates, or dynasties.
 4. Do NOT output a numerical percentage score.
 5. Set confidence_label to:
-   - "high" only if the monument's key architectural markers are clearly visible and unambiguous.
+   - "high" only if key architectural markers of the specific Bagalkot monument are clearly visible and unambiguous.
    - "medium" if the monument is partially obscured or from an atypical angle, but features match.
    - "low" or "unknown" if the image is ambiguous, blurry, or not in the catalog.
 
@@ -315,8 +315,8 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
     };
   }
 
-  // If Groq explicitly verified that the image is NOT in the closed catalog
-  if (groqResult && !groqResult.identified && (!localResult || localResult.confidence_label === 'low')) {
+  // If Groq explicitly verified that the image is NOT in the closed catalog (and was not rate-limited)
+  if (groqResult && !groqResult.identified && !groqResult.rateLimited && (!localResult || localResult.confidence_label === 'low')) {
     return {
       identified: false,
       site_id: null,
