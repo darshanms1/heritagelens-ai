@@ -164,8 +164,9 @@ async function analyzeImage(imageBuffer, mimeType, options = {}) {
   // =========================================================================
   // LAYER 1: DETERMINISTIC EXACT & PERCEPTUAL MATCHING (OFFICIAL REFERENCES)
   // =========================================================================
+  let pMatch = null;
   try {
-    const pMatch = await perceptualMatcher.matchBuffer(imageBuffer);
+    pMatch = await perceptualMatcher.matchBuffer(imageBuffer);
     if (pMatch && pMatch.matched) {
       console.log(`[VisionService] MATCH SUCCESS via ${pMatch.matchMethod} (dist: ${pMatch.distance}) -> ${pMatch.monumentName}`);
       return {
