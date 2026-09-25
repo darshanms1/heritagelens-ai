@@ -69,6 +69,7 @@ async function processImage(imageBuffer, mimeType, language = 'English', level =
     // Case 1: Image could not be confidently matched to the 9 supported monuments
     if (!identification.identified || identification.confidence_label === 'low' || identification.confidence_label === 'unknown') {
         return {
+            identified: false,
             identification: {
                 site: identification.site_name || "Bagalkot Heritage Region",
                 site_id: identification.site_id || null,
